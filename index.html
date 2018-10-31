@@ -11,6 +11,12 @@
 
     <style>
         /* Desktop */
+        h1,
+        h2,
+        h3 {
+            background: white;
+            text-align: center;
+        }
         
         body {
             margin,
@@ -19,35 +25,39 @@
         
         iframe {
             border: black 1px solid;
+            display: block;
         }
         
         a {
             text-decoration: none;
-            color: mediumpurple;
+            color: inherit;
         }
         
         a:hover {
             text-decoration: underline;
-            color: mediumpurple;
         }
+        
         
         .sticky {
             width: 100%;
             position: fixed;
             top: 0;
         }
-        
-        /* Break for mobile */
-        
+     
+        #foo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+           /* Break for mobile */
         @media screen and (max-width: 800px) {
             iframe {
                 width: 100%;
-            }
-            h1,
-            h2,
-            h3 {
-                background: white;
-                text-align: center;
             }
         }
     </style>
@@ -58,26 +68,23 @@
     <h4>Websites</h4>
     <portfolio>
         <ul>
-            <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com    
-<!--            <iframe src = "http://www.creemoresnhl.com"></iframe>-->
+            <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
             </a></li>
-            <li><a href="http://www.uoftwooddatabase.com" target="_page">uoftwooddatabase.com    
-<!--            <iframe src = "http://www.uoftwooddatabase.com"></iframe>-->
+            <li><a href="http://www.uoftwooddatabase.com" target="_page">uoftwooddatabase.com
             </a></li>
         </ul>
     </portfolio>
-
-    <h4>Social Media</h4>
-    <ul>
-        <li><a href='https://www.facebook.com/shaneguignard'>Facebook</a></li>
-        <li><a href='https://www.twitter.com/shaneguignard'>Twitter</a></li>
-        <li><a href='https://www.linkedin.com/in/shaneguignard/'>LinkedIn</a></li>
-    </ul>
-
+    <hr>
+    <div id="foo">
+        <h4>Social Media</h4>
+        <ul>
+            <li><a href='https://www.facebook.com/shaneguignard'>Facebook</a></li>
+            <li><a href='https://www.twitter.com/shaneguignard'>Twitter</a></li>
+            <li><a href='https://www.linkedin.com/in/shaneguignard/'>LinkedIn</a></li>
+        </ul>
+    </div>
 </body>
 <script>
-    
-    
     window.onscroll = function() {
         stickyScroll()
     };
