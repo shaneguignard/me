@@ -44,15 +44,23 @@
             top: 0;
         }
      
-        #foo {
+        #footer {
             position: absolute;
+            text-align: center;
             bottom: 0;
             left: 0;
             width: 100%;
             background: black;
             color: white;
-            padding-top: 10px;
-            padding-bottom: 10px;
+        }
+        .socialIcons {
+            width: 35px;
+            height: 35px;
+            padding: 15px;
+            
+        }
+        .socialIcons:hover { 
+            border-bottom: 1px solid white;
         }
            /* Break for mobile */
         @media screen and (max-width: 800px) {
@@ -70,17 +78,16 @@
         <ul>
             <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
             </a></li>
-            <li><a href="http://www.uoftwooddatabase.com" target="_page">uoftwooddatabase.com
+            <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_page">uoftwooddatabase.com
             </a></li>
         </ul>
     </portfolio>
     <hr>
-    <div id="foo">
-        <h4>Social Media</h4>
+    <div id="footer">
         <ul>
-            <li><a href='https://www.facebook.com/shaneguignard'>Facebook</a></li>
-            <li><a href='https://www.twitter.com/shaneguignard'>Twitter</a></li>
-            <li><a href='https://www.linkedin.com/in/shaneguignard/'>LinkedIn</a></li>
+            <a href='https://www.facebook.com/shaneguignard'><img class='socialIcons' src= 'icons/facebook.png'/></a>
+            <a href='https://www.twitter.com/shaneguignard'><img class='socialIcons' src= 'icons/twitter.png'></a>
+            <a href='https://www.linkedin.com/in/shaneguignard/'><img class='socialIcons' src='icons/linkedin.png'></a>
         </ul>
     </div>
 </body>
