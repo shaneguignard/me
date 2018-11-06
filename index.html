@@ -11,6 +11,7 @@
 
     <style>
         /* Desktop */
+        
         h1,
         h2,
         h3 {
@@ -19,13 +20,23 @@
         }
         
         body {
+            font-family: sans-serif;
             margin,
             padding: 0;
         }
         
-        iframe {
-            border: black 1px solid;
-            display: block;
+        nav {
+            text-align: center;
+        }
+        
+        li:hover {
+            background: black;
+            color: white;
+        }
+        
+        li {
+            display: inline-block;
+            padding: 10px;
         }
         
         a {
@@ -37,13 +48,12 @@
             text-decoration: underline;
         }
         
-        
         .sticky {
             width: 100%;
             position: fixed;
             top: 0;
         }
-     
+        
         #footer {
             position: absolute;
             text-align: center;
@@ -53,16 +63,18 @@
             background: black;
             color: white;
         }
+        
         .socialIcons {
             width: 35px;
             height: 35px;
             padding: 15px;
-            
         }
-        .socialIcons:hover { 
-            border-bottom: 1px solid white;
+        
+        portfolio, nav {
+            display: none;
         }
-           /* Break for mobile */
+        /* Break for mobile */
+        
         @media screen and (max-width: 800px) {
             iframe {
                 width: 100%;
@@ -73,8 +85,21 @@
 
 <body>
     <h1>Shane Guignard</h1>
-    <h4>Websites</h4>
+    <nav>
+        <li>WEBSITES</li>
+        <li>BLOG</li>
+        <li>BUSINESSES</li>
+        <li>PROJECTS</li>
+        <li>RESEARCH PAPERS</li>
+        <li>ABOUT</li>
+    </nav>
+
+    <hr>
+    <home>
+        <h2 id="underconstruction">This website is currently under construction</h2>
+    </home>
     <portfolio>
+        <h4>Websites</h4>
         <ul>
             <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
             </a></li>
@@ -82,10 +107,9 @@
             </a></li>
         </ul>
     </portfolio>
-    <hr>
     <div id="footer">
         <ul>
-            <a href='https://www.facebook.com/shaneguignard'><img class='socialIcons' src='icons/facebook.png'/></a>
+            <a href='https://www.facebook.com/shaneguignard'><img class='socialIcons' src='/var/www/icons/facebook.png' /></a>
             <a href='https://www.twitter.com/shaneguignard'><img class='socialIcons' src='icons/twitter.png'></a>
             <a href='https://www.linkedin.com/in/shaneguignard/'><img class='socialIcons' src='icons/linkedin.png'></a>
         </ul>
