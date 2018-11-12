@@ -12,6 +12,15 @@
     <style>
         /* Desktop */
         
+        desk{
+            display: inline;
+        }
+        tablet, mobile{
+            display: none;
+        }
+        sub{
+            font-size: 8pt;
+        }
         h1,
         h2,
         h3 {
@@ -72,7 +81,7 @@
             padding: 15px;
         }
         
-        #test {
+        #underConstruction {
             width: 50%;
             margin-left: 25%;           
         }
@@ -81,18 +90,35 @@
         nav {
             display: none;
         }
-        /* Break for mobile */
+        /* Break for tablet */
         
         @media screen and (max-width: 800px) {
-            iframe {
-                width: 100%;
+            desk{
+                display: none;
+            }
+            tablet{
+                display: inline
             }
         }
+        
+        /* Break for Mobile */
+        @media screen and (max-width: 500px) {
+            tablet{
+                display: none;
+            }
+            mobile{
+                display: inline;
+            }
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>Shane Guignard</h1>
+    <h1>Shane Guignard<sub>
+    <desk>Desktop</desk>
+    <tablet>Tablet</tablet>
+        <mobile>Mobile</mobile></sub></h1>
     <nav>
         <li>WEBSITES</li>
         <li>BLOG</li>
@@ -106,7 +132,7 @@
     <hr>
     <home>
         <h2 id="underconstruction">Website is currently under construction</h2>
-        <img id="test" src="i_guess.png" />
+        <img id="underConstruction" src="i_guess.png" />
     </home>
     <portfolio>
         <h4>Websites</h4>
