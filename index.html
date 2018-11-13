@@ -12,14 +12,21 @@
     <style>
         /* Desktop */
         
-        desk{
+        desk {
             display: inline;
         }
-        tablet, mobile{
+        
+        tablet,
+        mobile {
             display: none;
         }
-        sub{
+        
+        sub {
             font-size: 8pt;
+        }
+        
+        header{
+            background:white;
         }
         h1,
         h2,
@@ -33,9 +40,9 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            padding-bottom: 10%;
+            padding-bottom: 100%;
         }
-     
+        
         nav {
             text-align: center;
         }
@@ -70,7 +77,6 @@
             text-align: center;
             bottom: 0px;
             width: 100%;
-            padding: 0;
             background: black;
             color: white;
         }
@@ -83,7 +89,7 @@
         
         #underConstruction {
             width: 50%;
-            margin-left: 25%;           
+            margin-left: 25%;
         }
         
         portfolio,
@@ -93,28 +99,35 @@
         /* Break for tablet */
         
         @media screen and (max-width: 800px) {
-            desk{
+            desk {
                 display: none;
             }
-            tablet{
+            tablet {
                 display: inline
             }
         }
-        
         /* Break for Mobile */
+        
         @media screen and (max-width: 500px) {
-            tablet{
+            tablet {
                 display: none;
             }
-            mobile{
+            mobile {
                 display: inline;
             }
+            .socialIcons {
+                width: 30px;
+                height: 30px;
+                padding-top:10px;
+                padding-bottom: 5px;
+                
+            }
         }
-        
     </style>
 </head>
 
 <body>
+    <header id="navbar">
     <h1>Shane Guignard<sub>
     <desk>Desktop</desk>
     <tablet>Tablet</tablet>
@@ -128,8 +141,8 @@
         <li>RESEARCH</li>
         <li>ABOUT</li>
     </nav>
-
     <hr>
+    </header>
     <home>
         <h2 id="underconstruction">Website is currently under construction</h2>
         <img id="underConstruction" src="i_guess.png" />
@@ -144,16 +157,15 @@
         </ul>
     </portfolio>
     <div id="footer">
-        <ul>
-
+        <div>
             <a href='https://www.facebook.com/shaneguignard'><img class='socialIcons' src='facebook.png' /></a>
             <a href='https://www.twitter.com/shaneguignard'><img class='socialIcons' src='twitter.png'></a>
             <a href='https://www.linkedin.com/in/shaneguignard/'><img class='socialIcons' src='linkedin.png'></a>
-            <a href='mailto:shaneguignard@gmail.com'><img class='socialIcons' src='mail.png'/></a>
-            <a href='https://www.instagram.com/shaneguignard'><img class='socialIcons' src='instagram.png'/></a>
-            <a href='https://www.github.com/shaneguignard'><img class='socialIcons' src='github.png'/></a>
-            
-        </ul>
+            <a href='mailto:shaneguignard@gmail.com'><img class='socialIcons' src='mail.png' /></a>
+            <a href='https://www.instagram.com/shaneguignard'><img class='socialIcons' src='instagram.png' /></a>
+            <a href='https://www.github.com/shaneguignard'><img class='socialIcons' src='github.png' /></a>
+
+        </div>
     </div>
 </body>
 <script>
