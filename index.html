@@ -10,6 +10,16 @@
     <!--Style sheet-->
 
     <style>
+        /* Animations */
+        
+        @keyframes menuSlide {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 100px;
+            }
+        }
         /* Desktop */
         
         desk {
@@ -25,14 +35,16 @@
             font-size: 8pt;
         }
         
-        header{
-            background:white;
+        header {
+            background: white;
         }
+        
         h1,
         h2,
         h3 {
             background: white;
             text-align: center;
+            margin: inherit;
         }
         
         body,
@@ -40,7 +52,21 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            padding-bottom: 100%;
+            height: 1000px;
+            overflow-x: hidden;
+            animation-name: menuSlide;
+            animation-duration: .5s;
+            animation-fill-mode: both;
+        }
+        
+        #root {
+            background: white;
+            padding: 0;
+            margin: 0;
+        }
+        
+        p {
+            padding: 25px;
         }
         
         nav {
@@ -66,12 +92,6 @@
             text-decoration: underline;
         }
         
-        .sticky {
-            width: 100%;
-            position: fixed;
-            top: 0;
-        }
-        
         #footer {
             position: fixed;
             text-align: center;
@@ -85,6 +105,7 @@
             width: 35px;
             height: 35px;
             padding: 15px;
+            display: inline-table;
         }
         
         #underConstruction {
@@ -92,8 +113,7 @@
             margin-left: 25%;
         }
         
-        portfolio,
-        nav {
+        portfolio {
             display: none;
         }
         /* Break for tablet */
@@ -103,7 +123,7 @@
                 display: none;
             }
             tablet {
-                display: inline
+                display: inline;
             }
         }
         /* Break for Mobile */
@@ -115,47 +135,74 @@
             mobile {
                 display: inline;
             }
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0px;
+                background: lightgrey;
+                width: 200px;
+                display: none;
+            }
+            li {
+                display: block;
+                text-align: left;
+            }
             .socialIcons {
                 width: 30px;
                 height: 30px;
-                padding-top:10px;
+                padding-top: 10px;
                 padding-bottom: 5px;
-                
+            }
+            mobile#menubutton {
+                margin: 6px;
+                height: 30px;
+                width: 30px;
+                border: 1px solid black;
+                border-radius: 5px;
+                background: white;
+                position: absolute;
+                top: 0
             }
         }
     </style>
 </head>
 
 <body>
-    <header id="navbar">
-    <h1>Shane Guignard<sub>
+    <div id="root">
+        <header id="navbar">
+            <h1>Shane Guignard<sub>
     <desk>Desktop</desk>
     <tablet>Tablet</tablet>
         <mobile>Mobile</mobile></sub></h1>
-    <nav>
-        <li>WEBSITES</li>
-        <li>BLOG</li>
-        <li>BUSINESSES</li>
-        <li>PROJECTS</li>
-        <li>FOOD</li>
-        <li>RESEARCH</li>
-        <li>ABOUT</li>
-    </nav>
-    <hr>
-    </header>
-    <home>
-        <h2 id="underconstruction">Website is currently under construction</h2>
-        <img id="underConstruction" src="i_guess.png" />
-    </home>
-    <portfolio>
-        <h4>Websites</h4>
-        <ul>
-            <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
+            <mobile id='menubutton' onclick='menu(true);'></mobile>
+        </header>
+        <nav>
+            <li onclick="menu(false)">WEBSITES</li>
+            <li onclick="menu(false)">BLOG</li>
+            <li onclick="menu(false)">BUSINESSES</li>
+            <li onclick="menu(false)">MUSIC</li>
+            <li onclick="menu(false)">TECHNOLOGY</li>
+            <li onclick="menu(false)">FOOD</li>
+            <li onclick="menu(false)">RESEARCH</li>
+            <li onclick="menu(false)">ABOUT</li>
+        </nav>
+        <hr>
+        <home>
+            <h2 id="underconstruction">Website is currently under construction</h2>
+            <img id="underConstruction" src="i_guess.png" />
+            <br>
+            <p>Even though this website is under contruction, please feel free to contact me, or check out my life at any of the links below.</p>
+        </home>
+        <portfolio>
+            <h4>Websites</h4>
+            <ul>
+                <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
             </a></li>
-            <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_page">uoftwooddatabase.com
+                <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_page">uoftwooddatabase.com
             </a></li>
-        </ul>
-    </portfolio>
+            </ul>
+        </portfolio>
+    </div>
     <div id="footer">
         <div>
             <a href='https://www.facebook.com/shaneguignard'><img class='socialIcons' src='facebook.png' /></a>
@@ -169,18 +216,29 @@
     </div>
 </body>
 <script>
-    window.onscroll = function() {
-        stickyScroll()
-    };
+    // Place Javascipt here
+    width = window.innerWidth;
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function stickyScroll() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
+    function menu(expand) {
+        // Only execute if screen is smaller than mobile break.
+        if (width < 500) {
+            root = document.getElementById("root");
+            mobNav = document.getElementsByTagName('nav')[0];
+            menuButton = document.getElementById('menubutton');
+            switch (expand) {
+                case true:
+                    root.style = 'position: relative; left: 200px;';
+                    mobNav.style = 'display: block;';
+                    menuButton.style = 'display: none;';
+                    console.log(expand);
+                    break;
+                case false:
+                    root.style = 'position: relative; left: 0px;';
+                    mobNav.style = 'display:none;';
+                    menuButton.style = 'display: inline;';
+                    console.log(expand);
+                    break;
+            }
         }
     }
 </script>
