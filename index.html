@@ -139,7 +139,7 @@
             nav {
                 position: fixed;
                 top: 0px;
-                left: 0;
+                right: 0px;
                 background: lightgrey;
                 width: 200px;
                 height: 100%;
@@ -161,6 +161,7 @@
             mobile#menubutton {
                 position: fixed;
                 top: 0;
+                right: 0;
                 margin: 6px;
                 height: 30px;
                 width: 30px;
@@ -229,11 +230,15 @@
         </blog>
         <businesses>
             <h4>Businesses</h4>
-            <p>One day I will business...</p>
+            <p>One day I will business</p>
         </businesses>
         <music>
             <h4>Music</h4>
-            <p>EMBEDDED SOUNDCLOUD. WOOO</p>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173074534&color=%236c8ca4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/132467062&color=%236c8ca4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/132467081&color=%236c8ca4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173072693&color=%236c8ca4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            
         </music>
         <tech>
             <h4>Technology</h4>
@@ -282,7 +287,7 @@
             menuButton = document.getElementById('menubutton');
             switch (expand) {
                 case true:
-                    root.style = 'position: relative; left: 200px;';
+                    root.style = 'position: relative; left: -200px;';
                     mobNav.style = 'display:block;';
                     menuButton.style = 'display: none;';
                     break;
