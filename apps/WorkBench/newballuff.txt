@@ -1,0 +1,1647 @@
+{"origin": "Produkte",
+"numFound": 3625,
+"start": 0,
+"query": "*bes*",
+"docs": [
+{
+"id": "BAM0092-120888",
+"name": "BES 03,0-KB-3",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0092"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 03,0-KB-3"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"120888"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3112",
+"title": "Photo_42911_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24278",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24279",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24280",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24281",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24282",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24283",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24284",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24285",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3112"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.6176",
+"title": "Produktansicht_42911_01",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.15648",
+"category": "Technical drawings ",
+"fileName": "42911_01.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.6176"
+},
+{
+"id": "FIL_.mvar.prv.15649",
+"category": "Technical drawings ",
+"fileName": "42911_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.6176"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0092-120888",
+"name": "BES 03,0-KB-3",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0092"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 03,0-KB-3"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"120888"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3112",
+"title": "Photo_42911_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24278",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24279",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24280",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24281",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24282",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24283",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24284",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3112"
+},
+{
+"id": "FIL_.mvar.img.dc.24285",
+"category": "Media raw data ",
+"fileName": "42911_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3112"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.6176",
+"title": "Produktansicht_42911_01",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.15648",
+"category": "Technical drawings ",
+"fileName": "42911_01.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.6176"
+},
+{
+"id": "FIL_.mvar.prv.15649",
+"category": "Technical drawings ",
+"fileName": "42911_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.6176"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0094-637074",
+"name": "BES 04,0-KB-1",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0094"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 04,0-KB-1"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"637074"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3087",
+"title": "Photo_42847_00_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24078",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24079",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24080",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24081",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24082",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24083",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24084",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24085",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3087"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.4635",
+"title": "Produktansicht_42847_00",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.12360",
+"category": "Technical drawings ",
+"fileName": "42847_00.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.4635"
+},
+{
+"id": "FIL_.mvar.prv.12361",
+"category": "Technical drawings ",
+"fileName": "42847_00.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.4635"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0094-637074",
+"name": "BES 04,0-KB-1",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0094"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 04,0-KB-1"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"637074"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3087",
+"title": "Photo_42847_00_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24078",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24079",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24080",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24081",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24082",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24083",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24084",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3087"
+},
+{
+"id": "FIL_.mvar.img.dc.24085",
+"category": "Media raw data ",
+"fileName": "42847_00_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3087"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.4635",
+"title": "Produktansicht_42847_00",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.12360",
+"category": "Technical drawings ",
+"fileName": "42847_00.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.4635"
+},
+{
+"id": "FIL_.mvar.prv.12361",
+"category": "Technical drawings ",
+"fileName": "42847_00.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.4635"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0095-554468",
+"name": "BES 04,0-KB-3",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0095"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 04,0-KB-3"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"554468"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3093",
+"title": "Photo_42880_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24126",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24127",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24128",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24129",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24130",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24131",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24132",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24133",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3093"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.6167",
+"title": "Produktansicht_42880_01",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.15630",
+"category": "Technical drawings ",
+"fileName": "42880_01.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.6167"
+},
+{
+"id": "FIL_.mvar.prv.15631",
+"category": "Technical drawings ",
+"fileName": "42880_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.6167"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0095-554468",
+"name": "BES 04,0-KB-3",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0095"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 04,0-KB-3"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"554468"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3093",
+"title": "Photo_42880_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24126",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24127",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24128",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24129",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24130",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24131",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24132",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3093"
+},
+{
+"id": "FIL_.mvar.img.dc.24133",
+"category": "Media raw data ",
+"fileName": "42880_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3093"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.6167",
+"title": "Produktansicht_42880_01",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.15630",
+"category": "Technical drawings ",
+"fileName": "42880_01.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.6167"
+},
+{
+"id": "FIL_.mvar.prv.15631",
+"category": "Technical drawings ",
+"fileName": "42880_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.6167"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0097-637075",
+"name": "BES 05,0-KB-1",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0097"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 05,0-KB-1"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"637075"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3088",
+"title": "Photo_42848_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24086",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24087",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24088",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24089",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24090",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24091",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24092",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24093",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3088"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.4636",
+"title": "Produktansicht_42848_00",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.12362",
+"category": "Technical drawings ",
+"fileName": "42848_00.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.4636"
+},
+{
+"id": "FIL_.mvar.prv.12363",
+"category": "Technical drawings ",
+"fileName": "42848_00.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.4636"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0097-637075",
+"name": "BES 05,0-KB-1",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0097"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 05,0-KB-1"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"637075"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3088",
+"title": "Photo_42848_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24086",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24087",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24088",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24089",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24090",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24091",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24092",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3088"
+},
+{
+"id": "FIL_.mvar.img.dc.24093",
+"category": "Media raw data ",
+"fileName": "42848_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3088"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.4636",
+"title": "Produktansicht_42848_00",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.12362",
+"category": "Technical drawings ",
+"fileName": "42848_00.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.4636"
+},
+{
+"id": "FIL_.mvar.prv.12363",
+"category": "Technical drawings ",
+"fileName": "42848_00.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.4636"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0098-554469",
+"name": "BES 05,0-KB-3",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0098"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 05,0-KB-3"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"554469"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3094",
+"title": "Photo_42881_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24134",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24135",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24136",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24137",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24138",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24139",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24140",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24141",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3094"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.6168",
+"title": "Produktansicht_42881_01",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.15632",
+"category": "Technical drawings ",
+"fileName": "42881_01.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.6168"
+},
+{
+"id": "FIL_.mvar.prv.15633",
+"category": "Technical drawings ",
+"fileName": "42881_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.6168"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+},
+{
+"id": "BAM0098-554469",
+"name": "BES 05,0-KB-3",
+"features": [
+{
+"id": "A_.com.web.main.title.CUR",
+"name": "A_.com.web.main.title.CUR",
+"title": "Title",
+"values": [
+"Accessories"
+]
+},
+{
+"id": "A_.SAP.EAN11.CUR",
+"name": "A_.SAP.EAN11.CUR",
+"title": "Ordercode",
+"values": [
+"BAM0098"
+]
+},
+{
+"id": "A_.SAP.MAKTG.CUR",
+"name": "A_.SAP.MAKTG.CUR",
+"title": "Short text",
+"values": [
+"BES 05,0-KB-3"
+]
+},
+{
+"id": "A_.SAP.MATNR.CUR",
+"name": "A_.SAP.MATNR.CUR",
+"title": "Mat.No.",
+"values": [
+"554469"
+]
+},
+{
+"id": "A_.SAP.MSTAE.CUR",
+"name": "A_.SAP.MSTAE.CUR",
+"title": "Material Status",
+"values": [
+"AK"
+]
+}
+],
+"photos": [
+{
+"id": "DOC_.mob.img.dc.3094",
+"title": "Photo_42881_01_P_00_00",
+"typeId": "IMG",
+"type": "Photo ",
+"categoryId": "MDT",
+"category": "Media raw data ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.img.dc.24134",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300CMYK",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24135",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_02.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN300GY",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24136",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_10.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.big",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24137",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_11.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "PPT.RGB.small",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24138",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_20.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24139",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_21.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Preview",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24140",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_22.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.img.dc.3094"
+},
+{
+"id": "FIL_.mvar.img.dc.24141",
+"category": "Media raw data ",
+"fileName": "42881_01_P_00_00_23.jpg",
+"downloadName": "unknown",
+"fileFormat": "jpg",
+"medVarTypeId": "Web.Thumbnail.big",
+"documentId": "DOC_.mob.img.dc.3094"
+}
+],
+"refPropertyId": "A_.pdb.Productphoto.CUR"
+},
+{
+"id": "DOC_.mob.prv.6168",
+"title": "Produktansicht_42881_01",
+"typeId": "PRV",
+"type": "Product view ",
+"categoryId": "DRW",
+"category": "Technical drawings ",
+"eula": false,
+"registration": false,
+"variants": [
+{
+"id": "FIL_.mvar.prv.15632",
+"category": "Technical drawings ",
+"fileName": "42881_01.gif",
+"downloadName": "unknown",
+"fileFormat": "gif",
+"medVarTypeId": "Web.Detail",
+"documentId": "DOC_.mob.prv.6168"
+},
+{
+"id": "FIL_.mvar.prv.15633",
+"category": "Technical drawings ",
+"fileName": "42881_01.tif",
+"downloadName": "unknown",
+"fileFormat": "tif",
+"medVarTypeId": "PRN600BK",
+"documentId": "DOC_.mob.prv.6168"
+}
+],
+"refPropertyId": "A_.pdb.Productview.CUR"
+}
+]
+}
+]
+}

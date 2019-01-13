@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contacts</title>
+<script>
+var fname = [];
+var lname = [];
+var num = [];
+function searchContacts(name){
+	
+	var resultsArray = [];
+	$.ajax({
+	url:"contacts.json",
+	dataType: 'json',
+
+    beforeSend: function () {
+        console.log("Loading");
+    	},
+	error: function (jqXHR, textStatus, errorThrown) {
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorThrown);b   
+    	},
+
+    success: function (data) {
+		console.log('Success');
+		for(var i = 0;i<data.length;i++)
+		{	
+		fname[i] = data[i].fname;
+		lname[i] = data[i].lname;
+		num[i] = data[i].number;
+		
+		if (name==fname[i])
+		{
+			resultsArray.push(fname[i]+", "+lname[i]+" "+num[i]+"<button type='button' onclick='edit(fname["+i+"], lname["+i+"], num["+i+"], "+i+")'>edit</button><br>");
+		}
+			
+			
+		}
+		var results = resultsArray.join('<br>');
+		return document.getElementById('outputbk').innerHTML=results;
+		},
+
+    complete: function () {
+        console.log('Finished all tasks');
+    	}
+	});
+}
+function edit(editfname, editlname, editnum,i){
+	document.getElementById('outputbk').innerHTML = ("Enter New First Name: <input id='newfname' value='"+editfname+"'></textarea><br>Enter New Last Name: <input id='newlname' value='"+editlname+"'></textarea><br>Enter New Number: <input id='newnum' value='"+editnum+"'></textarea>");
+	console.log(i);
+	document.getElementById('searchbk').innerHTML = ("<button type='button' onclick='submitnew(newfname.value, "+i+")'>Submit Changes</button>");
+}
+function submitnew(newfname, i){
+	
+	$.ajax({
+	url:"contacts.json",
+	dataType: 'json',
+	type:"POST",
+	success: function (data) {
+	console.log("POST")
+		 },
+	});
+}
+</script>
+
+</head>
+<body>
+<div id="outputbk">
+</div>
+<div id="searchbk">
+<input id="search" value=""></textarea><br>
+<button type="button" onclick="searchContacts(search.value)">Search Contacts</button>
+</div>
+</body>
+
+</html>

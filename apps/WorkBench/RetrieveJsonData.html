@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+function getJson(){
+	
+	var resultsArray = [];
+	$.ajax({
+	url:"IFM_sensors.json",
+	//dataType: 'jsonp',
+
+    beforeSend: function () {
+        console.log("Loading");
+    	},
+	error: function (jqXHR, textStatus, errorThrown) {
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorThrown);
+    	},
+
+    success: function (data) {
+		console.log('Success');
+		console.log(data);
+		},
+
+    complete: function () {
+        console.log('Finished all tasks');
+    	}
+	});
+}
+
+getJson();
+</script>
+
+</head>
+<body>
+</body>
+</html>

@@ -11,30 +11,32 @@
 
     <style>
         /* Animations */
-        
+
         @keyframes animationName {
             from {}
+
             to {}
         }
+
         /* Desktop */
-        
+
         desk {
             display: inline;
         }
-        
+
         tablet,
         mobile {
             display: none;
         }
-        
+
         sub {
             font-size: 8pt;
         }
-        
+
         header {
             background: white;
         }
-        
+
         h1,
         h2,
         h3 {
@@ -42,7 +44,7 @@
             text-align: center;
             margin: inherit;
         }
-        
+
         body,
         html {
             font-family: sans-serif;
@@ -50,45 +52,45 @@
             padding: 0;
             overflow-x: hidden;
         }
-        
+
         #root {
             background: white;
             padding: 0;
             margin: 0;
             padding-bottom: 50px;
         }
-        
+
         home {
             text-align: center;
         }
-        
+
         p {
             padding: 25px;
         }
-        
+
         nav {
             text-align: center;
         }
-        
+
         li:hover {
             background: black;
             color: white;
         }
-        
+
         li {
             display: inline-block;
             padding: 10px;
         }
-        
+
         a {
             text-decoration: none;
             color: inherit;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         #footer {
             position: fixed;
             text-align: center;
@@ -97,27 +99,29 @@
             background: black;
             color: white;
         }
-        
+
         .socialIcons {
             width: 30px;
             height: 30px;
             padding: 15px;
             display: inline-table;
         }
-        .socialIcons:hover{
+
+        .socialIcons:hover {
             width: 35px;
             height: 35px;
         }
-        
+
         #underConstruction {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 33%;
         }
-        
+
         portfolio,
         blog,
+        sandbox,
         businesses,
         music,
         tech,
@@ -127,25 +131,30 @@
             display: block;
             padding: 20px;
         }
+
         /* Break for tablet */
-        
+
         @media screen and (max-width: 800px) {
             desk {
                 display: none;
             }
+
             tablet {
                 display: inline;
             }
         }
+
         /* Break for Mobile */
-        
+
         @media screen and (max-width: 500px) {
             tablet {
                 display: none;
             }
+
             mobile {
                 display: inline;
             }
+
             nav {
                 position: fixed;
                 top: 0px;
@@ -156,10 +165,12 @@
                 padding-top: 40px;
                 display: none;
             }
+
             li {
                 display: block;
                 text-align: left;
             }
+
             .socialIcons {
                 width: 30px;
                 height: 30px;
@@ -167,6 +178,7 @@
                 padding-bottom: 5px;
                 padding: 10px
             }
+
             mobile#menubutton {
                 position: fixed;
                 top: 0;
@@ -178,25 +190,29 @@
                 border-radius: 5px;
                 background: white;
             }
-            #underConstruction{
+
+            #underConstruction {
                 width: 66%;
             }
         }
-        
+
         @media screen and (max-width: 450px) {
             #me {
                 font-size: 18pt;
                 padding-top: 20px;
             }
+
             .socialIcons {
                 padding: 5px;
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
+
             li {
                 font-size: 12pt;
             }
         }
+
     </style>
 </head>
 
@@ -204,19 +220,21 @@
     <div id="root">
         <header id="navbar">
             <h1 id='me'>Shane Guignard<sub>
-    <desk>Desktop</desk>
-    <tablet>Tablet</tablet>
-        <mobile>Mobile</mobile></sub></h1>
+                    <desk>Desktop</desk>
+                    <tablet>Tablet</tablet>
+                    <mobile>Mobile</mobile>
+                </sub></h1>
             <mobile id='menubutton' onclick='menu(true);'></mobile>
         </header>
         <nav>
             <li onclick="menu(false); pages('home');">HOME</li>
             <li onclick="menu(false); pages('websites');">WEBSITES</li>
             <li onclick="menu(false); pages('blog');">BLOG</li>
-<!--            <li onclick="menu(false); pages('businesses');">BUSINESSES</li>-->
-<!--            <li onclick="menu(false); pages('music');">MUSIC</li>-->
-<!--            <li onclick="menu(false); pages('technology');">TECHNOLOGY</li>-->
-<!--            <li onclick="menu(false); pages('food');">FOOD</li>-->
+            <li onclick="menu(false); pages('sandbox');">SANDBOX</li>
+            <!--            <li onclick="menu(false); pages('businesses');">BUSINESSES</li>-->
+            <!--            <li onclick="menu(false); pages('music');">MUSIC</li>-->
+            <!--            <li onclick="menu(false); pages('technology');">TECHNOLOGY</li>-->
+            <!--            <li onclick="menu(false); pages('food');">FOOD</li>-->
             <li onclick="menu(false); pages('research');">RESEARCH</li>
             <li onclick="menu(false); pages('about');">ABOUT</li>
         </nav>
@@ -231,12 +249,12 @@
             <h4>Websites</h4>
             <ul>
                 <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
-            </a></li>
+                    </a></li>
                 <li><a href="https://shaneguignard.github.io/creemoresnhl" target="_page">creemoresnhl.com (Beta)
-            </a></li>
+                    </a></li>
                 <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_page">uoftwooddatabase.com
-            </a></li>
-<!--                <li><a href='apps/scoresheet.html'>ScoreSheet</a></li>-->
+                    </a></li>
+                <!--                <li><a href='apps/scoresheet.html'>ScoreSheet</a></li>-->
                 <li><a href='phptest.php'>PHP test</a></li>
             </ul>
         </portfolio>
@@ -244,19 +262,31 @@
             <h4>Blog</h4>
             <p>The Chronicles</p>
         </blog>
-<!--
+        <sandbox>
+            <h4>Sandbox</h4>
+            <p>A collection of my current and past projects</p>
+            <ul>
+                <li>
+                    <a href='apps/scoresheet.html'>CSNHL timesheet</a></li>
+                <li>
+                    <a href='apps/WorkBench/Myles%20App.html'>Myle's App</a>
+                </li>
+            </ul>
+
+        </sandbox>
+        <!--
         <businesses>
             <h4>Businesses</h4>
             <p>One day I will business</p>
         </businesses>
 -->
-<!--
+        <!--
         <tech>
             <h4>Technology</h4>
             <p>I might fold this into research or vice versa.</p>
         </tech>
 -->
-<!--
+        <!--
         <food>
             <h4>Food</h4>
             <p>Who else loves food?</p>
@@ -327,6 +357,9 @@
             case "blog":
                 document.getElementsByTagName('blog')[0].scrollIntoView();
                 break;
+            case "sandbox":
+                document.getElementsByTagName('sandbox')[0].scrollIntoView();
+                break;
             case "businesses":
                 document.getElementsByTagName('businesses')[0].scrollIntoView();
                 break;
@@ -347,6 +380,7 @@
                 break;
         }
     }
+
 </script>
 
 </html>
