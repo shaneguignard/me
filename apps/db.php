@@ -3,7 +3,7 @@
 
 $host = "localhost";
 $user = "root";
-$password = "root";
+$password = "sg214497135";
 $db = "gamehistory";
 
 // Create connection

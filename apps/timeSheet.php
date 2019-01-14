@@ -64,16 +64,16 @@
         
         
 //    insert into gamehistory SQL server
-    $sql = "INSERT INTO Events VALUES ('$gameEvent', '$arrPeriod[$i]', '$arrTeam[$i]', '$arrType[$i]', '$arrPlayer[$i]')";
-        
-    if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-    } 
-    else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-        
-    }
+    $sql = "INSERT INTO games VALUES ('$gameEvent', '$arrPeriod[$i]', '$arrTeam[$i]', '$arrType[$i]', '$arrPlayer[$i]')";
+    if($conn-> query($sql) !== TRUE) 
+	{
+	echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+ }
+if ($conn -> query ($sql) === TRUE){
+	mail("shaneguignard@gmail.com", "SQL Update", "Games History has been updated", $headers);
+	echo "New Records Created";
+}
         
         // Email example
     $msg = "<html><body><h1>Summary</h1>$gameDate</body></html>";
@@ -81,7 +81,7 @@
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
         
     // Send email
-    //mail("shaneguignard@gmail.com", "Test Email", $msg, $headers);
+   // mail("shaneguignard@gmail.com", "Test Email", $msg, $headers);
         
 // close file and connection    
 fclose($fid);
