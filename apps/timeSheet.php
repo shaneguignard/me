@@ -1,9 +1,10 @@
 <html>
 <?php 
-    require_once('db.php');
     
     $ref = $_POST["ref"];
+    $refpwd = $_POST["refpwd"];
     $tk = $_POST["timekeeper"];
+    $tkpwd = $_POST["timekeeperpwd"];
     $gameDate = $_POST["gameDate"];
     $playedAt = $_POST["playedAt"];
     $arrType = $_POST["type"];
@@ -13,6 +14,14 @@
     $arrPlayer = $_POST["player"];
     $arrAssist = $_POST["assist"];
 
+    if($tkpwd === '1234'){
+        require_once('db.php');
+    }
+    else 
+    {
+        echo "Incorrect password";
+    }
+    
     ?>
 <style>
     table {
@@ -25,7 +34,8 @@
 
     <br>
     <?php
-    echo "<h3>$gameDate Summary</h3>"?>
+    echo "<h3>$gameDate Summary</h3>";
+    ?>
     <table border=1>
         <tr>
             <th>date</th>
@@ -74,6 +84,8 @@ $conn->close();
 ?>
 
     </table>
+    
+    <a href='scoresheet.html'>New Game</a>
 </body>
 
 </html>
