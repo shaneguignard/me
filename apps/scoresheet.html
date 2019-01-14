@@ -307,9 +307,11 @@
                 console.log(side, type, team, player, darkGoals);
             }
         }
-
+        
+        time = (time.toLocaleTimeString()).replace(' AM', '');
+        time = (time.toLocaleTimeString()).replace(' PM', '');
         //Populate 
-        var newPoint = '<tr><td><input type="point" name="time[]" style="width:50px;" value="' + (time.toLocaleTimeString()).replace(' PM', '') + '" readonly></td><td><input type="point" name="period[]" value="0" style="width:20px;" placeholder="0"></td><td><input type="point" name="type[]" value="' + type + '" readonly></td><td><input type="point" name="team[]" value="' + team + '" readonly></td></td><td><input type="point" name="player[]" value="' + player + '"></td></tr>';
+        var newPoint = '<tr><td><input type="point" name="time[]" style="width:50px;" value="' + time + '" readonly></td><td><input type="point" name="period[]" value="0" style="width:20px;" placeholder="0"></td><td><input type="point" name="type[]" value="' + type + '" readonly></td><td><input type="point" name="team[]" value="' + team + '" readonly></td></td><td><input type="point" name="player[]" value="' + player + '"></td></tr>';
         row++;
         // Edits made in summary are not perminent after new point is added to list.
 
