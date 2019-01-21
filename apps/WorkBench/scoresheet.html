@@ -35,18 +35,6 @@
             width: 100%;
         }
         
-        #lightScore, #darkScore{
-            font-size: 24pt;
-            text-align: center;
-            border: 0px;
-            
-        }
-        #lightTeamName, #darkTeamName {
-            border:0px;
-            font-size: 18pt;
-            width: 200px;
-            
-        }
         input[type=button], input[type=submit], select {
             width: 200px;
             height: 40px;
@@ -106,19 +94,19 @@
             </thead>
             <tr>
                 <td colspan="2">
-                    <input id='lightScore' type='text' name="lightGoals" value='0'>
+                    <h1 id="lightScore">0</h1>
                 </td>
                 <td colspan="2">
-                    <input id='darkScore' type='text' name="darkGoals" value='0'>
+                    <h1 id="darkScore">0</h1>
                 </td>
             </tr>
             <tr>
-                <td><input id="lightTeamName" type='text' name='lightTeam'></td>
-                <td>Shots:
+                <td id="lightTeamName" colspan="1"></td>
+                <td colspan="1">Shots:
                     <h3 id="lightShots">0</h3>
                 </td>
-                <td><input id="darkTeamName" type='text' name='darkTeam'></td>
-                <td>Shots:
+                <td id="darkTeamName" colspan="1"></td>
+                <td colspan="1">Shots:
                     <h3 id="darkShots">0</h3>
                 </td>
             </tr>
@@ -127,7 +115,7 @@
                 <td colspan="2">
                     <input type="text" name="playedAt" placeholder="Area" value="Creemore Arena"></td>
                 <td colspan="2">
-                    <input type="text" name="gameDate" read-only>
+                    <input type="text" name="gameDate" readonly>
                 </td>
             </tr>
             <tr>
@@ -164,7 +152,10 @@
         <div id='darks'>
             <select id="dark" onchange="update(players);"></select>
             <select id='darkplayers'></select>
-            <select id='darktype'></select>
+            <select id='darktype'>
+                <option value='Goal' name='type'>Goal</option>
+                <option value='Penalty' name='type'>Penalty</option>
+            </select>
             <input type='button' value="Add" onclick="add('dark', darktype.value, dark.value, darkplayers.value);">
         </div>
 
@@ -174,7 +165,7 @@
         <table id='summary' border=1>
             <tr>
                 <th>Time (mm:ss)</th>
-                <!--                <th>Period</th>-->
+                <th>Period</th>
                 <!--                <th>Game Time</th>-->
                 <th>Type</th>
                 <th>Team</th>
@@ -188,10 +179,10 @@
     </form>
 </body>
 
-Note: Undo does not currently subtract from Goals and Shots totals displayed here.
+The undo should also subtract from scores and shots totals
 
-<script src='data/leagueSummary.js'></script>
-<script src='data/teamStats.js'></script>
+<script src='leagueSummary.js'></script>
+<script src='teamStats.js'></script>
 <script>
     var row = 0; //defines row for delete function
     var d = new Date();
@@ -216,7 +207,7 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
 
     var players = [];
     var teams = [];
-    var types = ['Goal', 'Penalty', 'Assist'];
+    var types = ['goal', 'penalty', 'assist'];
     var sides = ['light', 'dark'];
 
     // Populate arrays of Players by team
@@ -265,8 +256,8 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
         var dar = players[darkteams.selectedIndex];
         var lightsHtml = [];
         var darksHtml = [];
-        document.getElementById('lightTeamName').value = lightteams.value;
-        document.getElementById('darkTeamName').value = darkteams.value;
+        document.getElementById('lightTeamName').innerHTML = lightteams.value;
+        document.getElementById('darkTeamName').innerHTML = darkteams.value;
 
 
         for (i = 0; i < lar.length; i++) {
@@ -283,6 +274,9 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
 
     //O(1)
     function add(side, type, team, player) {
+        //var type = document.getElementById(side + 'type').value;
+        //var player = document.getElementById(side + 'players').value;
+        //var team = document.getElementById(team).value;
         var body = document.getElementsByTagName('body')[0];
         var popup = document.getElementById('popup');
         var time = new Date();
@@ -301,15 +295,15 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
                 console.log(side, type, team, player, darkShots);
             }
         }
-        if (type == "Goal") {
+        if (type == "goal") {
             if (side == "light") {
                 lightGoals++;
-                document.getElementById("lightScore").value = lightGoals;
+                document.getElementById("lightScore").innerHTML = lightGoals;
                 console.log(side, type, team, player, lightGoals);
             }
             if (side == "dark") {
                 darkGoals++;
-                document.getElementById("darkScore").value = darkGoals;
+                document.getElementById("darkScore").innerHTML = darkGoals;
                 console.log(side, type, team, player, darkGoals);
             }
         }
@@ -320,7 +314,7 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
             time = (time.toLocaleTimeString()).replace(' PM', '');
         }
         //Populate 
-        var newPoint = '<tr><td><input type="point" name="time[]" style="width:50px;" value="' + time + '" readonly></td><td><input type="point" name="type[]" value="' + type + '" readonly></td><td><input type="point" name="team[]" value="' + team + '" readonly></td></td><td><input type="point" name="player[]" value="' + player + '"></td></tr>';
+        var newPoint = '<tr><td><input type="point" name="time[]" style="width:50px;" value="' + time + '" readonly></td><td><input type="point" name="period[]" value="0" style="width:20px;" placeholder="0"></td><td><input type="point" name="type[]" value="' + type + '" readonly></td><td><input type="point" name="team[]" value="' + team + '" readonly></td></td><td><input type="point" name="player[]" value="' + player + '"></td></tr>';
         row++;
         // Edits made in summary are not perminent after new point is added to list.
 
@@ -355,7 +349,6 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
 
 
     buildGameLists(teamStats, league);
-
 </script>
 
 </html>
