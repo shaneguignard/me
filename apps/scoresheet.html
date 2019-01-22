@@ -188,15 +188,18 @@
     </form>
 </body>
 
-Note: Undo does not currently subtract from Goals and Shots totals displayed. What is displayed in "Summary" will be submitted to the server.
+Note: Undo does not currently subtract from Goals and Shots totals displayed here.
 
-<script src='leagueSummary.js'></script>
-<script src=' teamStats.js'></script>
+<script src='data/leagueSummary.js'></script>
+<script src='data/teamStats.js'></script>
 <script>
     var row = 0; //defines row for delete function
     var d = new Date();
     var x = document.getElementsByName('gameDate')[0];
-    x.value = d.toLocaleDateString();
+    var dd = d.getDate();
+    var mm = d.getMonth()+1;
+    var yyyy = d.getFullYear();
+    x.value = yyyy + '-' + mm + '-' + dd;
     var points = [];
     var lightShots = 0;
     var lightGoals = 0;
@@ -355,7 +358,6 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed. Wh
 
 
     buildGameLists(teamStats, league);
-
 </script>
 
 </html>
