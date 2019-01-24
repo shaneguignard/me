@@ -130,6 +130,7 @@
                     <input type="text" name="gameDate" read-only>
                 </td>
             </tr>
+<!--
             <tr>
                 <td colspan="2">
                     <input type="text" name="ref" placeholder="Referee">
@@ -138,6 +139,7 @@
                     <input type="password" name="refpwd" placeholder="Password">
                 </td>
             </tr>
+-->
             <tr>
                 <td colspan="2">
                     <input type="text" name="timekeeper" placeholder="TimeKeeper">
@@ -241,7 +243,7 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
         for (var p = 0; p < b.length; p++) {
             for (var t = 0; t < a.length; t++) {
                 if (b[p].currentTeam == teamStats[t].teams && b[p].lastModified == 2018) {
-                    players[t].push(b[p].name);
+                    players[t].push(b[p].num +' - '+b[p].name);
                 }
             }
         }
@@ -323,7 +325,7 @@ Note: Undo does not currently subtract from Goals and Shots totals displayed her
             time = (time.toLocaleTimeString()).replace(' PM', '');
         }
         //Populate 
-        var newPoint = '<tr><td><input type="point" name="time[]" style="width:50px;" value="' + time + '" readonly></td><td><input type="point" name="type[]" value="' + type + '" readonly></td><td><input type="point" name="team[]" value="' + team + '" readonly></td></td><td><input type="point" name="player[]" value="' + player + '"></td></tr>';
+        var newPoint = '<tr><td><input type="point" name="time[]" style="width:50px;" value="' + time + '"></td><td><input type="point" name="type[]" value="' + type + '" readonly></td><td><input type="point" name="team[]" value="' + team + '"></td></td><td><input type="point" name="player[]" value="' + (player.split(' - '))[1] + '"></td></tr>';
         row++;
         // Edits made in summary are not perminent after new point is added to list.
 
