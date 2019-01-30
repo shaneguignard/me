@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Shane Guignard</title>
+    <title>Hey, I'm Shane</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Scales the display to the same resolution on all devices-->
@@ -20,6 +20,18 @@
 
         /* Desktop */
 
+        img{
+        }
+        #background {
+            position: fixed;
+            top:100px;
+            left:25%;
+            display: block;
+            width:50%;
+            height: auto;
+            z-index: -10;
+            
+        }
         desk {
             display: inline;
         }
@@ -54,7 +66,7 @@
         }
 
         #root {
-            background: white;
+/*            background: white;*/
             padding: 0;
             margin: 0;
             padding-bottom: 50px;
@@ -85,6 +97,7 @@
         a {
             text-decoration: none;
             color: inherit;
+            cursor: pointer;
         }
 
         a:hover {
@@ -112,11 +125,11 @@
             height: 35px;
         }
 
-        #underConstruction {
+        #featureImg {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 33%;
+            width: 40%;
         }
 
         portfolio,
@@ -142,6 +155,9 @@
             tablet {
                 display: inline;
             }
+            body{
+                font-size: .9em;
+            }
         }
 
         /* Break for Mobile */
@@ -159,7 +175,7 @@
                 position: fixed;
                 top: 0px;
                 right: 0px;
-                background: lightgrey;
+                background: darkred;
                 width: 200px;
                 height: 100%;
                 padding-top: 40px;
@@ -186,10 +202,16 @@
                 margin: 6px;
                 height: 30px;
                 width: 30px;
-                border: 1px solid black;
+                border: 3px solid black;
                 border-radius: 5px;
-                background: white;
+                background-color: darkred;
+                padding: 5px;
+                cursor: pointer;
             }
+            #menubutton img{
+            width: inherit;
+            height: inherit;
+        }
 
             #underConstruction {
                 width: 66%;
@@ -224,7 +246,7 @@
                     <tablet>Tablet</tablet>
                     <mobile>Mobile</mobile>
                 </sub></h1>
-            <mobile id='menubutton' onclick='menu(true);'></mobile>
+            <mobile id='menubutton' onclick='menu(true);'><img src='menu.png'></mobile>
         </header>
         <nav>
             <li onclick="menu(false); pages('home');">HOME</li>
@@ -240,22 +262,19 @@
         </nav>
         <hr>
         <home>
-            <h3>This website is currently under construction</h3>
-            <img id='underConstruction' src='i_guess.png'>
+            <h3></h3>
+            <img id='featureImg' src='bg.gif'>
             <br>
-            <p>Even though this website is under contruction, please feel free to contact me, or check out my life at any of the links below.</p>
+            <p>Thanks for visiting my site, please feel free to browse around or get in touch with me at any of the links below.</p>
         </home>
         <portfolio>
             <h4>Websites</h4>
             <ul>
                 <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
                     </a></li>
-                <li><a href="https://shaneguignard.github.io/creemoresnhl" target="_page">creemoresnhl.com (Beta)
-                    </a></li>
                 <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_page">uoftwooddatabase.com
                     </a></li>
-                <!--                <li><a href='apps/scoresheet.html'>ScoreSheet</a></li>-->
-                <li><a href='phptest.php'>PHP test</a></li>
+                <li><a href='http://www.apothecarygrove.wordpress.com'>Apothecarygrove.com</a></li>
             </ul>
         </portfolio>
         <blog>
