@@ -19,7 +19,7 @@
         }
 
         /* Desktop */
-        
+
         desk {
             display: inline;
         }
@@ -51,11 +51,11 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-image: linear-gradient(white 50%, lightblue);
+            scroll-behavior: smooth;
         }
 
         #root {
-/*            background: white;*/
+            /*            background: white;*/
             padding: 0;
             margin: 0;
             padding-bottom: 50px;
@@ -116,13 +116,14 @@
         }
 
         #featureImg {
-            position:fixed;
-            left:33%;
+            position: fixed;
+            left: 33%;
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 33%;
             opacity: .3;
+            z-index: -10;
         }
 
         portfolio,
@@ -148,7 +149,8 @@
             tablet {
                 display: inline;
             }
-            body{
+
+            body {
                 font-size: .9em;
             }
         }
@@ -201,10 +203,11 @@
                 padding: 5px;
                 cursor: pointer;
             }
-            #menubutton img{
-            width: inherit;
-            height: inherit;
-        }
+
+            #menubutton img {
+                width: inherit;
+                height: inherit;
+            }
 
             #underConstruction {
                 width: 66%;
@@ -239,6 +242,7 @@
                     <tablet>Tablet</tablet>
                     <mobile>Mobile</mobile>
                 </sub></h1>
+            <scroll></scroll>
             <mobile id='menubutton' onclick='menu(true);'><img src='menu.png'></mobile>
         </header>
         <nav>
@@ -263,11 +267,11 @@
         <portfolio>
             <h4>Websites</h4>
             <ul>
-                <li><a href="http://www.creemoresnhl.com" target="_page">creemoresnhl.com
+                <li><a href="http://www.creemoresnhl.com" target="_blank">creemoresnhl.com
                     </a></li>
-                <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_page">uoftwooddatabase.com
+                <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html" target="_blank">uoftwooddatabase.com
                     </a></li>
-                <li><a href='http://www.apothecarygrove.wordpress.com'>Apothecarygrove.com</a></li>
+                <li><a href='http://www.apothecarygrove.wordpress.com' target="_blank">Apothecarygrove.com</a></li>
             </ul>
         </portfolio>
         <blog>
@@ -395,7 +399,13 @@
                 break;
         }
     }
-
+    
+    var x = document.getElementById('featureImg');
+    window.onscroll = function()
+    {
+        x.style = "top: "+(100+window.pageYOffset/4)+"px;";
+        
+    }
 </script>
 
 </html>
