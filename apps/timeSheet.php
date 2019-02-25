@@ -71,7 +71,7 @@
         echo "<td>$arrPlayer[$i]</td></tr>";
 
 //    insert into history.events SQL database
-        $sql = "INSERT INTO `events` VALUES ('$gameEvent', '$arrTeam[$i]', '$arrType[$i]', '$arrPlayer[$i]')";
+        $sql = "INSERT INTO `Events` VALUES ('$gameEvent', '$arrTeam[$i]', '$arrType[$i]', '$arrPlayer[$i]')";
 
             $result = $conn->query($sql);
     }
