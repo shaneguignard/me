@@ -17,6 +17,8 @@
     $arrTime = $_POST["time"];
     $arrPlayer = $_POST["player"];
 
+    
+    $arrPeriod = 0;
     if($tkpwd === '1234'){
         require_once('history-mysql.php');
     }
@@ -71,7 +73,7 @@
         echo "<td>$arrPlayer[$i]</td></tr>";
 
 //    insert into history.events SQL database
-        $sql = "INSERT INTO `Events` VALUES ('$gameEvent', '$arrTeam[$i]', '$arrType[$i]', '$arrPlayer[$i]')";
+        $sql = "INSERT INTO `Events` VALUES ('$gameEvent', '$arrTeam[$i]', '$arrType[$i]', '$arrPlayer[$i]', '$arrPeriod')";
 
             $result = $conn->query($sql);
     }

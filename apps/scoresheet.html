@@ -130,7 +130,7 @@
                     <input type="text" name="gameDate" read-only>
                 </td>
             </tr>
-            <!--
+<!--
             <tr>
                 <td colspan="2">
                     <input type="text" name="ref" placeholder="Referee">
@@ -148,7 +148,6 @@
                     <input type="password" name="timekeeperpwd" placeholder="Password">
                 </td>
             </tr>
-            <!--
             <tr>
                 <td colspan="2" align='right'>
                     <input type="button" value="Home SHOT!" onclick="add('light', 'Shot', light.value, 'null')">
@@ -157,17 +156,19 @@
                     <input type="button" value="Away SHOT!" onclick="add('dark', 'Shot', dark.value , 'null')">
                 </td>
             </tr>
--->
         </table>
-
-        <!--
+        <div id='lights'>
+            <select id="light" onchange="update(players);"></select>
+            <select id='lightplayers'></select>
+            <select id='lighttype'></select>
+            <input type='button' value="Add" onclick="add('light', lighttype.value, light.value, lightplayers.value)">
+        </div>
         <div id='darks'>
             <select id="dark" onchange="update(players);"></select>
             <select id='darkplayers'></select>
             <select id='darktype'></select>
             <input type='button' value="Add" onclick="add('dark', darktype.value, dark.value, darkplayers.value);">
         </div>
--->
 
         <h3>Summary</h3>
 
@@ -184,21 +185,13 @@
             <tbody id="records">
             </tbody>
         </table>
-        <div id='lights'>
-            <select id="light" onchange="update(players);"></select>
-            <select id='lightplayers'></select>
-            <select id='lighttype'></select>
-            <input type='button' value="Add" onclick="add('light', lighttype.value, light.value, lightplayers.value)">
-        </div>
         <input id='undo' type='button' onclick="myUndo();" value='Undo'>
         <input type="submit" value="End Game" style="margin-top:10px;">
     </form>
 </body>
-    
-    <h5>If you run into issues, call me at (647) 535-8454, my name is Shane</h5>
 
 Bugs: Undo does not currently subtract from Goals and Shots totals displayed here.
-Any changes made in the summary section will be undone everytime a new event is added.
+    Any changes made in the summary section will be undone everytime a new event is added. 
 
 <script src='leagueSummary.js'></script>
 <script src='teamStats.js'></script>
@@ -207,7 +200,7 @@ Any changes made in the summary section will be undone everytime a new event is 
     var d = new Date();
     var x = document.getElementsByName('gameDate')[0];
     var dd = d.getDate();
-    var mm = d.getMonth() + 1;
+    var mm = d.getMonth()+1;
     var yyyy = d.getFullYear();
     x.value = yyyy + '-' + mm + '-' + dd;
     var points = [];
@@ -251,7 +244,7 @@ Any changes made in the summary section will be undone everytime a new event is 
         for (var p = 0; p < b.length; p++) {
             for (var t = 0; t < a.length; t++) {
                 if (b[p].currentTeam == teamStats[t].teams && b[p].lastModified == 2018) {
-                    players[t].push(b[p].num + ' - ' + b[p].name);
+                    players[t].push(b[p].num +' - '+b[p].name);
                 }
             }
         }
@@ -368,7 +361,6 @@ Any changes made in the summary section will be undone everytime a new event is 
 
 
     buildGameLists(teamStats, league);
-
 </script>
 
 </html>
