@@ -51,7 +51,6 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            scroll-behavior: smooth;
         }
 
         #root {
@@ -74,14 +73,18 @@
             text-align: center;
         }
 
-        li:hover {
-            background: black;
-            color: white;
-        }
+
 
         li {
             display: inline-block;
             padding: 10px;
+            background: black;
+        }
+
+        li:hover {
+            color:white;
+            text-decoration: underline;
+
         }
 
         a {
@@ -91,6 +94,7 @@
         }
 
         a:hover {
+            color:white;
             text-decoration: underline;
         }
 
@@ -113,6 +117,7 @@
         .socialIcons:hover {
             width: 35px;
             height: 35px;
+        
         }
 
         #featureImg {
@@ -152,6 +157,17 @@
 
             body {
                 font-size: .9em;
+            }
+            li{
+                background: white;
+                color: black;
+            }
+            li:hover{
+             background: black;   
+            }
+            li:active{
+            background: black;
+                color: black;
             }
         }
 
@@ -194,13 +210,9 @@
                 position: fixed;
                 top: 0;
                 right: 0;
-                margin: 6px;
-                height: 30px;
-                width: 30px;
-                border: 3px solid black;
-                border-radius: 5px;
-                background-color: white;
-                padding: 5px;
+                height: 50px;
+                width: 50px;
+                opacity: .7;
                 cursor: pointer;
             }
 
@@ -250,6 +262,7 @@
             <li onclick="menu(false); pages('websites');">WEBSITES</li>
             <li onclick="menu(false); pages('blog');">BLOG</li>
             <li onclick="menu(false); pages('sandbox');">SANDBOX</li>
+            <li onclick="menu(false); pages('resume');">RESUME</li>
             <!--            <li onclick="menu(false); pages('businesses');">BUSINESSES</li>-->
             <!--            <li onclick="menu(false); pages('music');">MUSIC</li>-->
             <!--            <li onclick="menu(false); pages('technology');">TECHNOLOGY</li>-->
@@ -260,7 +273,7 @@
         <hr>
         <home>
             <h3></h3>
-            <img id='featureImg' src='shanes%20big%20brain.svg'>
+            <img id='featureImg' src=''>
             <br>
             <p>Thanks for visiting my site, please feel free to browse around or get in touch with me at any of the links below.</p>
         </home>
@@ -392,30 +405,41 @@
                 document.getElementsByTagName('food')[0].scrollIntoView();
                 break;
             case "research":
-                document.getElementsByTagName('research')[0].scrollIntoView();
+                var x = document.getElementsByTagName('research')[0];
+                x.scrollIntoView();
+                x.style = "background: black; color: white;";
                 break;
             case "about":
-                document.getElementsByTagName('about')[0].scrollIntoView();
+                var x = document.getElementsByTagName('about')[0];
+                x.scrollIntoView();
+                x.style = "background: black; color: white;";
+                break;
+            case "resume":
+                window.location.href = "Resume_WebApplicationDeveloper.pdf";
                 break;
         }
     }
-    
+
     // Parallax Scrolling
     var x = document.getElementById('featureImg');
-    window.onscroll = function()
-    {
-        x.style = "top: "+(100+window.pageYOffset/4)+"px;";
-        
+    window.onscroll = function() {
+        x.style = "top: " + (100 + window.pageYOffset / 4) + "px;";
+
     }
+
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47081695-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-47081695-2');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47081695-2');
+
 </script>
 
 
