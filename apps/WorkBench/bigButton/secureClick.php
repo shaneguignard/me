@@ -24,7 +24,8 @@ $success = mysqli_real_connect(
 if($success){
     echo "Successfully connected to database";
 
-    // $timeStamp = $TIMESTAMP();
+    $timeStamp = date('Y-m-d H:i:s');
+    echo "<br>TimeStamp: ".$timeStamp;
     function getUserIpAddr(){
         if(!empty($_SERVER['HTTP_CLIENT_IP'])){
             //ip from share internet
