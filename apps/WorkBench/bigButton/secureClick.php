@@ -48,7 +48,7 @@ if($success){
     $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$ip"));
     $country = $geo["geoplugin_countryName"];
     $city = $geo["geoplugin_city"];
-    echo '<br>Location: '.$city.', '.$country;
+    echo '<br>Location: '.$country;
 
 }
 else{
