@@ -43,13 +43,14 @@ if($success){
     echo "<br>Type: ".$type;
     $device = $_POST['device'];
     echo '<br>Device: '.$device;
-    // $country = $_POST['country'];
     
+    $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$ip"));
+    $country = $geo["geoplugin_countryName"];
+    echo '<br>Country: '.$country;
+    $city = $geo["geoplugin_city"];
+
 }
 else{
     echo "<br>There was an issue connecting to the database";
 }
-
-
-
 ?>
