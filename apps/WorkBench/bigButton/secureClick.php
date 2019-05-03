@@ -1,10 +1,15 @@
 <?php
 
-$user = 'write';
-$pw = 'testpass';
+// $user = 'write';
+// $pw = 'testpass';
+// $db = 'bigButton';
+// $host = '127.0.0.1';
+// $port = 8889;
+
+$user = "RW";
+$pw = "pa&&word";
+$host = "35.183.44.111";
 $db = 'bigButton';
-$host = '127.0.0.1';
-$port = 8889;
 
 $link = mysqli_init();
 $success = mysqli_real_connect(
@@ -15,6 +20,7 @@ $success = mysqli_real_connect(
     $db, 
     $port
 );
+
 if($success){
     echo "Successfully connected to database";
 
@@ -32,8 +38,7 @@ if($success){
         return $ip;
     }
     
-    echo '<br>User Real IP '.getUserIpAddr();
-    echo '<br>IP '.$_SERVER['REMOTE_ADDR'];
+    echo '<br>User IP '.getUserIpAddr();
     $type = $_POST['type'];
     echo "<br>Type: ".$type;
     $device = $_POST['device'];
