@@ -33,9 +33,6 @@
                 <?php include('../View/footer.php'); ?>
             </td>
         </tr>
-
-
-
     </table>
 </body>
 </html>

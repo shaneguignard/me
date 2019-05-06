@@ -1,29 +1,6 @@
 <?php
-
-// $user = 'write';
-// $pw = 'testpass';
-// $db = 'bigButton';
-// $host = '127.0.0.1';
-// $port = 8889;
-
-$user = "RW";
-$pw = "pa&&word";
-$host = "35.183.44.111";
-$db = 'bigButton';
-
-$link = mysqli_init();
-$success = mysqli_real_connect(
-    $link, 
-    $host, 
-    $user,
-    $pw,
-    $db, 
-    $port
-);
-
-if($success){
-    echo "Successfully connected to database";
-
+    echo 'Successfully submitted to database: <br>';
+    include('mydb.php');
     $timeStamp = date('Y-m-d H:i:s');
     echo "<br>TimeStamp: ".$timeStamp;
     function getUserIpAddr(){
@@ -49,9 +26,15 @@ if($success){
     $country = $geo["geoplugin_countryName"];
     $city = $geo["geoplugin_city"];
     echo '<br>Location: '.$country;
-
-}
-else{
-    echo "<br>There was an issue connecting to the database";
-}
+     
+    $insert = $conn->query("INSERT INTO `Events` values(CURRENT_TIMESTAMP, '$type', '$ip', '$device', '$country')");
+    if($result === FALSE){
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    if ($result === TRUE){
+        echo "New Records Created";
+    }
+    $conn -> close();
 ?>
+<hr>
+<a href='./Controller/index.php' >Return to button</a>

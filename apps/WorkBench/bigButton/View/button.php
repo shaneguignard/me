@@ -16,14 +16,10 @@
 <form id='buttonGame' method="POST" action="../secureClick.php">
 <input type='hidden' name='device'>
 <input type='hidden' name='type'>
-<input type='hidden' name='country'>
 <input type='submit' value='BUTTON'/>
 </form>
 
 <script>
-console.log('Hey');
 var d = document.getElementsByName('device')[0].value = navigator.platform;
 var t = document.getElementsByName('type')[0].value = 'Click';
-
-console.log(x);
 </script>
