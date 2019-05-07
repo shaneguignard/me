@@ -16,8 +16,8 @@
         return $ip;
     }
     
-    $ip = getUserIpAddr();
-    echo '<br>User IP '.$ip;
+    $ipaddr = getUserIpAddr();
+    echo '<br>User IP '.$ipaddr;
     $type = $_POST['type'];
     echo "<br>Type: ".$type;
     $device = $_POST['device'];
@@ -28,7 +28,7 @@
     $city = $geo["geoplugin_city"];
     echo '<br>Location: '.$country;
      
-    $insert = $conn->query("INSERT INTO `Events` values($timeStamp, '$type', '$ip', '$device', '$country')");
+    $insert = $conn->query("INSERT INTO `Events` values(CURRENT_TIMESTAMP, '$type', '$ipaddr', '$device', '$country')");
     if($result === FALSE){
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
