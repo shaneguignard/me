@@ -27,8 +27,8 @@
     $country = $geo["geoplugin_countryName"];
     $city = $geo["geoplugin_city"];
     echo '<br>Location: '.$country;
- 
-    echo '<br>Browser: '.$_POST['browser'];
+    $browser = $_POST['browser'];
+    echo '<br>Browser: '.$browser;
      
     $insert = $conn->query("INSERT INTO `Events` values(CURRENT_TIMESTAMP, '$type', '$ipaddr', '$device', '$country', '$browser')");
     if($result === FALSE){
