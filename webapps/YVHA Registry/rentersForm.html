@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Renters Submittion Form</title>
+        <style>
+        h1{
+            text-align: center;
+        }
+        input, textarea, select{
+            display: table;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        textarea{
+            height: 100px;
+        }
+        </style>
+    </head>
+    <body> 
+        <h1>York Village Renters Registration</h1>
+        <form id='renter' method="POST" action=''>
+            <input name='address' type='text' placeholder="Address *">
+            <input name='rent' type='number' placeholder="Rent Cost Per Month *">
+            <input name='rooms' type='number' placeholder='Number of rooms in house'>
+            <input name='vacancies' type='number' placeholder='Vacancies'>
+            <input name='tenent' type='number' placeholder='Number of kitchens'>
+            <input name='bathrooms' type='number' placeholder='Number of Bathrooms'>
+            <input name='washers' type='number' placeholder="Number of Washing Machines">
+            <input name='dryers' type='number' placeholder='Number of Drying Machines'>
+            <input name='entrances' type='number' placeholders='Number of Entrances/ Exits'>
+            <select name='colivingStyle'>
+                <option value='both'>Both</option>
+                <option value='male-only'>Male Only</option>
+                <option value='female-only'>Female Only</option>
+            </select>
+            <input name='accessibility' type='text' placeholder='Are there any accessibility modifications in the house'>
+            <textarea name='notes' type='text' placeholder='If there is any additional comments, or notes that you would like to make about the property, landlord, or fellow tenents. Let us know here.'></textarea>
+            <input name='sumbit' type='Submit'>
+        </form>
+    </body>
+</html>
