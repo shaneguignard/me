@@ -5,7 +5,11 @@
 <html>
     <head>
         <title>YVHA Gallery</title>
-
+        <style> 
+        h1{
+            text-align:center;
+        }
+        </style> 
     </head>
 <body>
     <h1>The Village Gallery</h1>

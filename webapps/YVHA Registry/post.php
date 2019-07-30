@@ -1,4 +1,15 @@
+<style>
+    h1{
+        color:black;
+    }
+a h1:hover{
+    color:#d22f25;
+}
+a{
+    text-decoration: none;
+}
 
+</style>
 <h1>Thank you for your help!</h1>
 <table style='text-align:center;'>
 
@@ -17,11 +28,13 @@
     echo "<tr><td>External Doors: </td><td>$_POST[doors]</td></tr>";
     echo "<tr><td>Housing Type: </td><td>$_POST[bias]</td></tr>";
     echo "<tr><td>Accessibility: </td><td>$_POST[accessibility]</td></tr>";
-    echo "<tr><td colspan='2'>Notes:</td></tr>";
-    echo "<tr><td colspan='2'>$_POST[notes]</td></tr>";
+    echo "<tr><td>Notes:</td><td>$_POST[notes]</td></tr>";
 
     //$sql = "INSERT INTO `TheVillage` VALUES ('$_POST['number']', '$_POST['streetname'], )";
     //$result = $conn->query($sql);
 ?>
 
 </table>
+
+Feel free to browse the data that we have collected so far. 
+<a href="./gallery.php"><h1>Village Gallery</h1></a>
