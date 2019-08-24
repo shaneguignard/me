@@ -8,7 +8,6 @@
     <!--Scales the display to the same resolution on all devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Style sheet-->
-
     <style>
         /* Animations */
 
@@ -259,19 +258,7 @@
             <scroll></scroll>
             <mobile id='menubutton' onclick='menu(true);'><img src='menu.png'></mobile>
         </header>
-        <nav>
-            <li onclick="menu(false); pages('home');">HOME</li>
-            <li onclick="menu(false); pages('websites');">WEBSITES</li>
-            <!-- <li onclick="menu(false); pages('blog');">BLOG</li> -->
-            <li onclick="menu(false); pages('webapps');">WEBAPPS</li>
-            <li onclick="menu(false); pages('resume');">RESUME</li>
-            <!--            <li onclick="menu(false); pages('businesses');">BUSINESSES</li>-->
-            <!--            <li onclick="menu(false); pages('music');">MUSIC</li>-->
-            <!--            <li onclick="menu(false); pages('technology');">TECHNOLOGY</li>-->
-            <!--            <li onclick="menu(false); pages('food');">FOOD</li>-->
-            <li onclick="menu(false); pages('research');">RESEARCH</li>
-            <li onclick="menu(false); pages('about');">ABOUT</li>
-        </nav>
+        <?php include("nav.php"); ?>
         <hr>
         <home>
             <h3></h3>
@@ -295,12 +282,14 @@
                 </li>
 
             </ul>
+
         </portfolio>
         <blog>
             <h4>Blog</h4>
             <p>The Chronicles</p>
         </blog>
         <webapps>
+            <?php include("webapps.php");?>
             <h4>webApps</h4>
             <p>A collection of my current and past projects</p>
             <ul>
@@ -308,15 +297,14 @@
                     <a href='./webapps/'>All</a></li>
 
                 <li>
-                    <a href='./webapps/timeSheet/scoresheet.html'>CSNHL timesheet</a></li>
+                    <a href='./webapps/creemoresnhl/beta/timekeeper/'>CSNHL timesheet</a></li>
                 <li>
                     <a href='./webapps/Myles App.html'>Myles’s App</a>
                 </li>
                 <li>
-                    <a href='https://shaneguignard.github.io/iVideo/index.html'>Interactive Video Experiment</a>
+                    <a href='https://shaneguignard.github.io/iVideo/'>Interactive Video Experiment</a>
                 </li>
-                <li><a href='./webapps/bigButton/Controller/index.php'>Big Red Button</a></li>
-                <li><a href='./webapps/manualEventLog/dataEntrySubmition.php'>Event Logging</a></li>
+                <li><a href='./webapps/bigButton/'>Big Red Button</a></li>
             </ul>
 
         </webapps>

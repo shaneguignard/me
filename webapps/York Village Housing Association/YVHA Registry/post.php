@@ -14,11 +14,17 @@ a{
 <table style='text-align:center;'>
 
 <?php
-    //include("dbConnection.php");
+    include("dbConnection.php");
+    $currDate = date("Y/m/d H:i");
+    $sql = "INSERT INTO `TheVillage` (
+        timestamp
+    ) VALUES ('1', '$currDate', '$_POST[number]', '$_POST[streetname]','$_POST[rent]', '$_POST[rooms]', '$_POST[vacancies]', '$_POST[kitchen]', '$_POST[bathrooms]', '$_POST[washer]', '$_POST[dryers]', '$_POST[doors]', '$_POST[bias]', '$_POST[accessibility]', '$_POST[notes]')";
+    $result = $conn->query($sql);
 
     // Make it such that the input fields are evaluated before they are submitted.
     // Then perform required calculations with what information is provided before submitting to database
     echo "<tr><th colspan='2'><h2>$_POST[number] $_POST[streetname]</h2></th></tr>";
+    echo "<tr><td>Date:</td><td>$currDate</td></tr>";
     echo "<tr><td>Cost/ month: </td><td>$_POST[rent]</td></tr>";
     echo "<tr><td>Number of Rooms: </td><td>$_POST[rooms]</td></tr>";
     echo "<tr><td>Vacancies: </td><td>$_POST[vacancies]</td></tr>";
@@ -30,11 +36,11 @@ a{
     echo "<tr><td>Accessibility: </td><td>$_POST[accessibility]</td></tr>";
     echo "<tr><td>Notes:</td><td>$_POST[notes]</td></tr>";
 
-    //$sql = "INSERT INTO `TheVillage` VALUES ('$_POST['number']', '$_POST['streetname'], )";
-    //$result = $conn->query($sql);
+    
 ?>
 
 </table>
 
 Feel free to browse the data that we have collected so far. 
 <a href="./gallery.php"><h1>Village Gallery</h1></a>
+
