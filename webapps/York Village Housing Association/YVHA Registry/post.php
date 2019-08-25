@@ -15,12 +15,15 @@ a{
 
 <?php
     include("dbConnection.php");
-    $currDate = date("Y/m/d H:i");
-    $sql = "INSERT INTO `TheVillage` (
-        timestamp
-    ) VALUES ('1', '$currDate', '$_POST[number]', '$_POST[streetname]','$_POST[rent]', '$_POST[rooms]', '$_POST[vacancies]', '$_POST[kitchen]', '$_POST[bathrooms]', '$_POST[washer]', '$_POST[dryers]', '$_POST[doors]', '$_POST[bias]', '$_POST[accessibility]', '$_POST[notes]')";
+    $currDate = date("Y/m/d h:i");
+    $sql = "INSERT INTO `TheVillage` (`timestamp`, `number`, `street_name`, `rent`, `rooms`, `vacancies`, `kitchens`, `bathrooms`, `washing_machines`, `drying_machines`, `entrances/exits`, `cohabitance`, `accessibility`, `note`) VALUES ('$currDate', '$_POST[number]', '$_POST[streetname]','$_POST[rent]', '$_POST[rooms]', '$_POST[vacancies]', '$_POST[kitchens]', '$_POST[bathrooms]', '$_POST[washers]', '$_POST[dryers]', '$_POST[doors]', '$_POST[bias]', '$_POST[accessibility]', '$_POST[notes]')";
     $result = $conn->query($sql);
-
+    if($result === FALSE){
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    if ($result === TRUE){
+        echo "New Record Created";
+    }
     // Make it such that the input fields are evaluated before they are submitted.
     // Then perform required calculations with what information is provided before submitting to database
     echo "<tr><th colspan='2'><h2>$_POST[number] $_POST[streetname]</h2></th></tr>";
@@ -40,7 +43,7 @@ a{
 ?>
 
 </table>
-
+<hr>
 Feel free to browse the data that we have collected so far. 
 <a href="./gallery.php"><h1>Village Gallery</h1></a>
 
