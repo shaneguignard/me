@@ -17,6 +17,9 @@ a{
     include("dbConnection.php");
     $currDate = date("Y/m/d h:i");
     $sql = "INSERT INTO `TheVillage` (`timestamp`, `number`, `street_name`, `rent`, `rooms`, `vacancies`, `kitchens`, `bathrooms`, `washing_machines`, `drying_machines`, `entrances/exits`, `cohabitance`, `accessibility`, `note`) VALUES ('$currDate', '$_POST[number]', '$_POST[streetname]','$_POST[rent]', '$_POST[rooms]', '$_POST[vacancies]', '$_POST[kitchens]', '$_POST[bathrooms]', '$_POST[washers]', '$_POST[dryers]', '$_POST[doors]', '$_POST[bias]', '$_POST[accessibility]', '$_POST[notes]')";
+    // How to ensure that entries aren't submitted twice when users refresh the webpage
+    // One solution is to redirect to a seperate page that displays a summary by pulling from the 
+    // database vs before submitting
     $result = $conn->query($sql);
     if($result === FALSE){
         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -38,8 +41,8 @@ a{
     echo "<tr><td>Housing Type: </td><td>$_POST[bias]</td></tr>";
     echo "<tr><td>Accessibility: </td><td>$_POST[accessibility]</td></tr>";
     echo "<tr><td>Notes:</td><td>$_POST[notes]</td></tr>";
-
     
+    header("Location: gallery.php");
 ?>
 
 </table>
