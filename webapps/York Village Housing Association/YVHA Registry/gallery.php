@@ -15,6 +15,7 @@
         </style> 
     </head>
 <body>
+    <a id='backToForm' href='index.html'>< Go Back to Form</a>
     <h1>The Village Gallery</h1>
     <div id='gallery'>
     <table border='1'>

@@ -305,6 +305,7 @@
                     <a href='https://shaneguignard.github.io/iVideo/'>Interactive Video Experiment</a>
                 </li>
                 <li><a href='./webapps/bigButton/'>Big Red Button</a></li>
+                <li><a href='./webapps/York Village Housing Association/YVHA Registry/'>YVHA Housing Registry</a></li>
             </ul>
 
         </webapps>
