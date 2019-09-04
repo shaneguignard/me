@@ -42,7 +42,8 @@ a{
     echo "<tr><td>Accessibility: </td><td>$_POST[accessibility]</td></tr>";
     echo "<tr><td>Notes:</td><td>$_POST[notes]</td></tr>";
     
-    header("Location: gallery.php");
+    # Redirects to gallery
+    # header("Location: gallery.php");
 ?>
 
 </table>

@@ -12,10 +12,27 @@
         table{
             width:100%;
         }
+        a{
+            text-decoration: none;
+
+        }
+        .button{
+            width:200px;
+            font-size:14pt;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: #d22f25;
+        }
+        .button:hover{
+            background: #5e5e5e;
+            color: black;
+        }
         </style> 
     </head>
 <body>
-    <a id='backToForm' href='index.html'>< Go Back to Form</a>
+    <a id='backToForm' href='index.html'>
+        <div class='button'>Go Back to Form</div></a>
     <h1>The Village Gallery</h1>
     <div id='gallery'>
     <table border='1'>
@@ -59,4 +76,8 @@
     
     </table>
 </div>
+<div id='footer'>
+        Thank you for checking out our Gallery, this is a very preliminary version of what we have, built by students for students. 
+        If you have any suggestions, or would like to help shape what the Gallery becomes, contact us <a href='https://yvha.ca/contact-us'>here</a> and we would love to hear from you.
+</div> 
 </body>

@@ -11,12 +11,18 @@
     <style>
         h1 {
             text-align: center;
-            font-weight: 100;
+            font-weight: 400;
+            font-size: 32pt;
             color: #5e5e5e;
         }
-
+        #header{
+            padding:20px;
+            margin:0;
+        }
         body {
             font-family: sans-serif;
+            padding:0;
+            margin:0;
         }
 
         form {
@@ -42,7 +48,7 @@
             margin-bottom: 10px;
             margin-top: 10px;
             padding: 10px;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #5e5e5e;
             border-left: none;
             border-right:none;
             border-top:none; 
@@ -61,25 +67,33 @@
         }
 
         #foo{
-            background: #d22f25;
+            background: #5e5e5e;
             color: black;
             padding: 10px;
         }
         #foo p{
+            padding:10px;
             background: white;
             color: #d22f25;
+        }
+        hr{
+            border-color: #d22f25 ;
         }
     </style>
 
 </head>
 
 <body>
+    <div id="header">
     <h1>York Village Renters Registration</h1>
-
+        </div>
+        <hr>
     <form id='renter' method="POST" action='post.php'>
+        <!-- <input type='checkbox' onselect="inputs.forEach(noAnswer);">No Answer -->
         <input name='number' type='text' placeholder="Street Number Required" required>
         <input name='streetname' type='text' placeholder="Street Name Required" required>
         <input name='rent' type='text' placeholder="Rent Cost Per Month Requred" required>
+    
         <input name='rooms' type='text' placeholder='Number of rooms in house'>
         <!-- <select name='type'>
             <option value='subletting'>Sublet</option>
@@ -109,6 +123,7 @@
         Housing Bias:
         <select name='bias'>
             <option value='female-only'>Female-Only</option>
+            <option value='male-only'>Male-Only</option>
             <option value='co-ed'>Co-Ed</option>
         </select>
         Internet Included: </br>
@@ -127,7 +142,7 @@
         <input name='sumbit' type='Submit'>
     </form>
     <div id='foo'>
-        <!-- Double check with the guys about this should be a well scripted message -->
+        <!-- Double check with the guys about this. Should be a well scripted message -->
         <p>
             We are collecting information to create a database of all the houses in the village in the effort
             to standardize the housing prices in the village. If you own one of these lovely homes, we would 
@@ -139,5 +154,11 @@
 
     </div>
 </body>
+<script>
+    var inputs = [`rooms`, `vacancies`, `kitchens`, `bathrooms`, `washing_machines`, `drying_machines`, `entrances/exits`, `cohabitance`, `accessibility`, `note`];
+    function noAnswer(item, index){
+
+    }
+</script>
 
 </html>
