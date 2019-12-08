@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Style sheet-->
     <style>
-        /* Animations */
+        /* pft... Animations */
 
         @keyframes animationName {
             from {}
@@ -53,7 +53,7 @@
         }
 
         #root {
-            /*            background: white;*/
+            /* background: white; */
             padding: 0;
             margin: 0;
             padding-bottom: 50px;
@@ -272,6 +272,7 @@
             <ul>
                 <li><a href="http://www.creemoresnhl.com" target="_blank">creemoresnhl.com
                     </a></li>
+                    
                 <li><a href="https://shaneguignard.github.io/uoftwoodguide/index.html"
                         target="_blank">uoftwooddatabase.com
                     </a></li>
@@ -290,24 +291,6 @@
         </blog>
         <webapps>
             <?php include("webapps.php");?>
-            <h4>webApps</h4>
-            <p>A collection of my current and past projects</p>
-            <ul>
-                <li>
-                    <a href='./webapps/'>All</a></li>
-
-                <li>
-                    <a href='./webapps/creemoresnhl/beta/timekeeper/'>CSNHL timesheet</a></li>
-                <li>
-                    <a href='./webapps/Myles App.html'>Myles’s App</a>
-                </li>
-                <li>
-                    <a href='https://shaneguignard.github.io/iVideo/'>Interactive Video Experiment</a>
-                </li>
-                <li><a href='./webapps/bigButton/'>Big Red Button</a></li>
-                <li><a href='./webapps/York Village Housing Association/YVHA Registry/'>YVHA Housing Registry</a></li>
-            </ul>
-
         </webapps>
         <!--
         <businesses>

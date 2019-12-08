@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renters Submittion Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Scales the display to the same resolution on all devices-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 32pt;
+            color: #5e5e5e;
+        }
+        #header{
+            padding:20px;
+            margin:0;
+        }
+        body {
+            font-family: sans-serif;
+            padding:0;
+            margin:0;
+        }
+
+        form {
+            color: #5e5e5e;
+            font-weight: 100;
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16pt;
+
+        }
+
+        input[type='number'],
+        input[type='text'],
+        input[type='submit'],
+        textarea,
+        select {
+            font-size: 14pt;
+            display: table;
+            width: 90%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #5e5e5e;
+            border-left: none;
+            border-right:none;
+            border-top:none; 
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type='submit'] {
+            background: #d22f25;
+            border-left: 2px solid #d22f25;
+            font-size: 20px;
+            border: 0px;
+            width: 100%;
+        }
+
+        #foo{
+            background: #5e5e5e;
+            color: black;
+            padding: 10px;
+        }
+        #foo p{
+            padding:10px;
+            background: white;
+            color: #d22f25;
+        }
+        hr{
+            border-color: #d22f25 ;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+    <h1>York Village Renters Registration</h1>
+        </div>
+        <hr>
+    <form id='renter' method="POST" action='post.php'>
+        <!-- <input type='checkbox' onselect="inputs.forEach(noAnswer);">No Answer -->
+        <input name='number' type='text' placeholder="Street Number Required" required>
+        <input name='streetname' type='text' placeholder="Street Name Required" required>
+        <input name='rent' type='text' placeholder="Rent Cost Per Month Requred" required>
+    
+        <input name='rooms' type='text' placeholder='Number of rooms in house'>
+        <!-- <select name='type'>
+            <option value='subletting'>Sublet</option>
+            <option value='renting'>Rental</option>
+        </select> -->
+        <input name='vacancies' type='text' placeholder='Number of Vacancies'>
+        Lease Term:
+        <select name='term'>
+            <option value='m2m'>Month to Month</option>
+            <option value='1'>1 Month</option>
+            <option value='2'>2 Months</option>
+            <option value='3'>3 Months</option>
+            <option value='4'>4 Months</option>
+            <option value='5'>5 Months</option>
+            <option value='6'>6 Months</option>
+            <option value='7'>7 Months</option>
+            <option value='8'>8 Months</option>
+            <option value='12'>12 Months</option>
+            <option value='16'>16 Months</option>
+            <option value='more'>More</option>
+        </select>
+        <input name='kitchens' type='text' placeholder='Number of Kitchens'>
+        <input name='bathrooms' type='text' placeholder='Number of Bathrooms'>
+        <input name='washers' type='text' placeholder="Number of Washing Machines">
+        <input name='dryers' type='text' placeholder='Number of Drying Machines'>
+        <input name='doors' type='text' placeholder='Number of Entrances/ Exits'>
+        Housing Bias:
+        <select name='bias'>
+            <option value='female-only'>Female-Only</option>
+            <option value='male-only'>Male-Only</option>
+            <option value='co-ed'>Co-Ed</option>
+        </select>
+        Internet Included: </br>
+        <input type='radio' name='internet' value='yes'> Yes</br>
+        <input type='radio' name='internet' value='no'> No</br>
+        Furnished: </br>
+        <input type='radio' name='furniture' value='yes'> Yes</br>
+        <input type='radio' name='furniture' value='no'> No
+        <!-- http://www.ohrc.on.ca/en/part-i-%E2%80%93-freedom-discrimination/housing-4 -->
+        <input name='accessibility' type='text' placeholder='Are there any accessibility modifications in the house'>
+        <textarea name='notes' type='text'
+            placeholder='If there is any additional comments, or notes that you would like to make about the property, landlord, or fellow tenants. Let us know here.'></textarea>
+        <!-- Future Photo upload option -->
+        <!-- https://www.w3schools.com/php/php_file_upload.asp -->
+        Currenly we do not support photo uploads, but we are working on it.
+        <input name='sumbit' type='Submit'>
+    </form>
+    <div id='foo'>
+        <!-- Double check with the guys about this. Should be a well scripted message -->
+        <p>
+            We are collecting information to create a database of all the houses in the village in the effort
+            to standardize the housing prices in the village. If you own one of these lovely homes, we would 
+            like to hear from you as well. By standardizing the living costs of a room in the village, and finding
+            a way to privide a resonable minimum level of living standard and lowest cost to the owner 
+            (remember we want to be green too!). We can work together to find a business model that allows
+            the income property to support itself. 
+        </p>
+
+    </div>
+</body>
+<script>
+    var inputs = [`rooms`, `vacancies`, `kitchens`, `bathrooms`, `washing_machines`, `drying_machines`, `entrances/exits`, `cohabitance`, `accessibility`, `note`];
+    function noAnswer(item, index){
+
+    }
+</script>
+
+</html>
