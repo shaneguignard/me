@@ -41,12 +41,12 @@ window.onload = function(){
 	for (var i = 0; i < historyjson.length; i++){
 		console.log(i);
 		history_html_list.push("<tr><td>" + historyjson[i].date + "</td>");
-		history_html_list.push("<td>" + historyjson[i].player + " from </td>");
-		history_html_list.push("<td>" + historyjson[i].team + " paid </td>");
-		history_html_list.push("<td>" + historyjson[i].paid + ", drank </td>");
-		history_html_list.push("<td>" + historyjson[i].drank + ", and owes </td>");
-		history_html_list.push("<td>" + historyjson[i].owes + " at</td>");
-		history_html_list.push("<td>" + historyjson[i].rate + " per drink</td></tr>");
+		history_html_list.push("<td>" + historyjson[i].player + "</td>");
+		history_html_list.push("<td>" + historyjson[i].team + "</td>");
+		history_html_list.push("<td>" + historyjson[i].paid + "</td>");
+		history_html_list.push("<td>" + historyjson[i].drank + "</td>");
+		history_html_list.push("<td>" + historyjson[i].owes + "</td>");
+		history_html_list.push("<td>" + historyjson[i].rate + "</td></tr>");
 	}
 	var temp = history_html_list.join('');
 	document.getElementById('history').innerHTML = temp;
