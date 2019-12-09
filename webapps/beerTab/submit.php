@@ -2,14 +2,11 @@
 
 <?php
 include('db-conn.php');
-
-
+date_default_timezone_set("America/New_York");
+$today = date("Y-m-d h:i:s");
 // Error Messages
 $clientNameReq = $drinkOrPay = $drankErr = $paidErr = '';
 $ready = 'Not Ready';
-date_default_timezone_set("America/New_York");
-$today = date("Y-m-d h:i:s");
-echo "Date: ".$today;
 
 function test_input($data) {
     $data = trim($data);
@@ -27,36 +24,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $clientName = test_input($_POST["clientName"]);
   }
 
-  if (empty($_POST['paid']) or empty($_POST['drank'])){
-	  $drinkOrPay = "Must Provide valid payment or drink number";
+  if (empty($_POST['paid'])){
+	  $paidErr = "Must Provide valid payment or drink number";
   }
   else{
-	  $drinkOrPay = True;
+	  $paid = test_input($_POST['paid']);
+	  
+  }
+  if (empty($_POST['drank'])){
+	$drankErr = test_input($_POST['drank']);
+  }
+  else{
+	$drank = test_input($_POST['drank']);
   }
 }
 
-if($playerName != ''){
+if($clientName != ''){
 	
-	$sql = "INSERT INTO Tab (player, paid, drank) VALUES ('$clientName', $paid, $drank)";
+	$sql = "INSERT INTO Tab (date, player, paid, drank) VALUES ('$today', '$clientName', $paid, $drank)";
     $result = $conn->query($sql);
     if($result === FALSE){
         echo "<h1>Problem submitting tab</h1>".$sql."<br>".$conn->error;
     }
     else{
-        echo "<h1>Record Added!</h1>";
         header("Location: overview.php");
-	}
-	echo $sql;
-    
+	}    
 }
-
+include('nav.php');
 ?>
-
 <h1>TEAM</h1>
-
-<?php 
-	include('nav.php');
-?>
 <style>
 	input{
 		display:block;
@@ -77,7 +73,6 @@ if($playerName != ''){
 <h2>Drank</h2>
 <input type='number' name='drank' value="<?= $drank ?>">
 <div class='error'><?= $drankErr ?></div>
-<div class='error'><?= $drinkOrPay ?></div>
 <input type='submit' value='Submit Record'>
 </form> 
 
@@ -96,7 +91,8 @@ if($playerName != ''){
 			echo "var clients = ".json_encode($clients).";";
 		}
 		else {
-			echo "alert('Problem loading clients names');";
+			header('Location: newPlayer.php');
+			die;
 		} 
 	?>
 	window.onload = function() {

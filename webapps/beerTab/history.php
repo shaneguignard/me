@@ -1,8 +1,9 @@
-<h1>History</h1>
+
 <?php 
 	include('nav.php');
 	include('db-conn.php');
 ?>
+<h1>History</h1>
 <table border=1>
 	<tr>
 		<th>Date</th>
@@ -30,7 +31,7 @@
 			echo "var historyjson = ".json_encode($history).";";
 		}
 		else {
-			echo "alert('Problem loading tabs history');";
+			echo "alert('No records to show, please add a player');";
 		} 
 
 ?>

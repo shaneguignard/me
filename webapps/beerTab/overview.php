@@ -1,8 +1,10 @@
-<h1>Overview</h1>
+
 <?php 
 	include('nav.php');
 	include('db-conn.php');
 ?>
+<h1>Overview</h1>
+<h3>{Team}</h3>
 <table id='overview' border=1>
 	<tr>
 		<th>Name</th>
@@ -17,7 +19,7 @@
 
 	<?php
 		// Retrieve tab list from sql
-		$sql = "select player, team, paid, drank, rate from Tab Group by player, team, paid, drank, rate";
+		$sql = "select player, sum(paid) as paid, sum(drank) as drank from Tab Group by player";
 		$result = $conn->query($sql);
 		$tabs = [];
 		if ($result->num_rows > 0) {
@@ -28,7 +30,8 @@
 			echo "var tabs = ".json_encode($tabs).";";
 		}
 		else {
-			echo "alert('Problem loading player tabs');";
+			header('Location: newPlayer.php');
+			die();
 		} 
 	?>
 	window.onload = function(){
@@ -40,3 +43,4 @@
 		document.getElementById('tabsOverview').innerHTML = temp;
 	}
 </script>
+<?php inlude('footer.php') ?>
