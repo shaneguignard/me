@@ -2,9 +2,14 @@
 
 <?php
 include('db-conn.php');
+
+
 // Error Messages
 $clientNameReq = $drinkOrPay = $drankErr = $paidErr = '';
 $ready = 'Not Ready';
+date_default_timezone_set("America/New_York");
+$today = date("Y-m-d h:i:s");
+echo "Date: ".$today;
 
 function test_input($data) {
     $data = trim($data);
@@ -21,30 +26,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   else {
       $clientName = test_input($_POST["clientName"]);
   }
+
   if (empty($_POST['paid']) or empty($_POST['drank'])){
 	  $drinkOrPay = "Must Provide valid payment or drink number";
   }
   else{
 	  $drinkOrPay = True;
   }
-  if (is_numeric($paid)){
-	  $paid = test_input($_POST['paid']);
-  }
-  else {
-	  $paidErr = "Amount paid should be a number";
-  }
-  if(is_numeric($drank)){
-	  $drank = test_input($_POST['drank']);
-  }
-  else {
-	  $drankErr = "Amount drank should be a number";
-  }
-  
-  
 }
 
 if($playerName != ''){
-    $ready = 'Record that '.$clientName.', paid '.$paid.', and drank '.$drank;
+	
+	$sql = "INSERT INTO Tab (player, paid, drank) VALUES ('$clientName', $paid, $drank)";
+    $result = $conn->query($sql);
+    if($result === FALSE){
+        echo "<h1>Problem submitting tab</h1>".$sql."<br>".$conn->error;
+    }
+    else{
+        echo "<h1>Record Added!</h1>";
+        header("Location: overview.php");
+	}
+	echo $sql;
     
 }
 
@@ -64,7 +66,7 @@ if($playerName != ''){
 }
 </style>
 <h3><a href='newPlayer.php'>Add New Player</a></h3>
-<form id='submit' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' mehtod='POST'>
+<form id='submit' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='POST'>
 <h2>Name</h2>
 <select id='clientDropDown' name='clientName'>
 </select>
@@ -83,9 +85,9 @@ if($playerName != ''){
 	// var clients = [{'name': 'Player1'}, {'name': 'Shane'}];
 
 	<?php 
-		$sql = "Select distinct player as name from Tab";
+		$sql = "Select distinct player as name, team from Tab";
         $result = $conn->query($sql);
-		$tabs = [];
+		$clients = [];
 		if ($result->num_rows > 0) {
 		// output data of each row
 			while($row = $result->fetch_assoc()) {
@@ -94,12 +96,12 @@ if($playerName != ''){
 			echo "var clients = ".json_encode($clients).";";
 		}
 		else {
-			echo "alert('Problem loading player names');";
+			echo "alert('Problem loading clients names');";
 		} 
 	?>
 	window.onload = function() {
 		var players = [];
-		console.log('Populate Players select', clients);
+		console.log('Populate clients DropDown with: ', clients);
 		for(var i = 0; i < clients.length; i++){
 			players.push('<option value="'+clients[i].name+'">'+clients[i].name+'</option>');
 		}

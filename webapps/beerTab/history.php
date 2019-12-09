@@ -9,8 +9,8 @@
 		<th>Player</th>
 		<th>Team</th>
 		<th>Paid</th>
-		<th>Owes</th>
 		<th>Drank</th>
+		<th>Owes</th>
 		<th>Rate</th>
 	</tr>
 <tbody id='history'>
@@ -34,12 +34,10 @@
 		} 
 
 ?>
-console.log("hello? ")
 window.onload = function(){
 	var history_html_list = [];
-	console.log("loaded "+ historyjson);
+	console.log("Loaded "+ historyjson);
 	for (var i = 0; i < historyjson.length; i++){
-		console.log(i);
 		history_html_list.push("<tr><td>" + historyjson[i].date + "</td>");
 		history_html_list.push("<td>" + historyjson[i].player + "</td>");
 		history_html_list.push("<td>" + historyjson[i].team + "</td>");

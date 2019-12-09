@@ -1,7 +1,7 @@
 <h1>Overview</h1>
 <?php 
 	include('nav.php');
-	require_once('db-conn.php');
+	include('db-conn.php');
 ?>
 <table id='overview' border=1>
 	<tr>
