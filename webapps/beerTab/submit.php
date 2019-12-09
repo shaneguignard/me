@@ -1,7 +1,7 @@
 <!-- ServerSide Validation -->
 
 <?php
-
+include('db-conn.php');
 // Error Messages
 $clientNameReq = $drinkOrPay = $drankErr = $paidErr = '';
 $ready = 'Not Ready';
@@ -50,7 +50,6 @@ if($playerName != ''){
 
 ?>
 
-
 <h1>TEAM</h1>
 
 <?php 
@@ -64,6 +63,7 @@ if($playerName != ''){
     color: red;
 }
 </style>
+<h3><a href='newPlayer.php'>Add New Player</a></h3>
 <form id='submit' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' mehtod='POST'>
 <h2>Name</h2>
 <select id='clientDropDown' name='clientName'>
@@ -76,7 +76,6 @@ if($playerName != ''){
 <input type='number' name='drank' value="<?= $drank ?>">
 <div class='error'><?= $drankErr ?></div>
 <div class='error'><?= $drinkOrPay ?></div>
-<h3><a href='newPlayer.php'>Add New Player</a></h3>
 <input type='submit' value='Submit Record'>
 </form> 
 

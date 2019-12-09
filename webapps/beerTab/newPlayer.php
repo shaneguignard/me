@@ -67,7 +67,6 @@ input{
 <div class='error'><?= $playerNameReq; ?></div>
 <h2>Player Team</h2>
 <input type='text' name='playerteam' value="<?= $playerTeam; ?>">
-<select name='team' id='myteams'></select>
 <br>
 <input type='submit' value='Create New Player'>
 </form>
