@@ -19,7 +19,7 @@
 
 	<?php
 		// Retrieve tab list from sql
-		$sql = "select player, sum(paid) as paid, sum(drank) as drank from Tab Group by player";
+		$sql = "select player, sum(paid) as paid, sum(drank) as drank, sum(rate*drank) as owes from Tab Group by player";
 		$result = $conn->query($sql);
 		$tabs = [];
 		if ($result->num_rows > 0) {
@@ -37,7 +37,12 @@
 	window.onload = function(){
 		var showtab = [];
 		for(var i = 0; i< tabs.length; i++){
-			showtab.push("<tr><td>"+tabs[i].player+"</td><td>"+tabs[i].drank+"</td><td>"+tabs[i].owes+"</td><td>"+tabs[i].paid+"</td></tr>");
+			if(tabs[i].drank == null){ 
+				continue;
+				}				
+			else{
+				showtab.push("<tr><td>"+tabs[i].player+"</td><td>"+tabs[i].drank+"</td><td>"+tabs[i].owes+"</td><td>"+tabs[i].paid+"</td></tr>");
+			}
 		}
 		var temp = showtab.join('');
 		document.getElementById('tabsOverview').innerHTML = temp;

@@ -9,6 +9,20 @@
     }
 </style>
 <div id='foo'>
-Shane Guignard apps
+Consession App
+<!-- <button onclick='clearall()'>Clear All</button> -->
 </div>
+<script>
+function clearall(){
+    var c = confirm("Are you sure you want to clear entire tab?");
+    if(c == true){
+        console.log("Clear all");
+    }
+    else {
+        console.log("Do nothing");
+    }
+    
+    
+}
+</script>
 

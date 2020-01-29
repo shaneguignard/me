@@ -32,6 +32,7 @@
 		}
 		else {
 			echo "alert('No records to show, please add a player');";
+
 		} 
 
 ?>
@@ -51,3 +52,4 @@ window.onload = function(){
 	document.getElementById('history').innerHTML = temp;
 }
 </script>
+<?php include('footer.php') ?>

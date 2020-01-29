@@ -1,0 +1,32 @@
+SET FOREIGN_KEY_CHECKS=0;
+INSERT INTO Players
+select distinct 
+date,
+(select number from league.Players_BASE where name = tempPlayers.player limit 1) as number,
+player, 
+team,
+goals, 
+assists, 
+points,
+penaltyMin,
+date as lastupdate, 
+(select teamB from Games where tempPlayers.team = teamA limit 1) as opponent,
+0 as period
+from 
+(
+    select distinct 
+    date, 
+    player,
+    team,
+    sum(type='goal') as goals, 
+    sum(type='assist') as assists,
+    sum(if(type='goal', 1, 0)+ if(type='assist', 1, 0)) as points,
+    sum(if(type='penalty', 2, 0)) as penaltyMin
+    from Events
+    where date > date_sub(CURRENT_TIMESTAMP, INTERVAL 1 DAY)
+    group by date, player, team
+) 
+as tempPlayers
+where player <> 'null' AND player <> ""
+group by date, player, team;
+SET FOREIGN_KEY_CHECKS=1;
