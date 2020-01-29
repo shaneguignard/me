@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+div{position:relative;
+width:100%;
+height:1000px;}
+</style>
+<script>
+var color = 1;
+	function newColor()
+	{
+	 
+		
+		switch(color)
+		{
+		case 1:
+		document.getElementById("body").bgColor="red";
+		break;
+		case 2:
+	  	document.getElementById("body").bgColor="blue";
+	 	break;
+		case 3:
+	  	document.getElementById("body").bgColor="purple";
+	 	break;
+		case 4:
+	  	document.getElementById("body").bgColor="green";
+	 	break;
+		case 5:
+	  	document.getElementById("body").bgColor="white";
+	 	break;
+		case 6:
+	  	document.getElementById("body").bgColor="yellow";
+	 	break;
+		default:
+	  	document.getElementById("body").bgColor="black";
+		color = 1;
+		}
+		color++;
+	}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tap and Color</title>
+</head>
+<body id="body" bgcolor="black">
+<div onclick="newColor()"></div>
+</body>
+</html>

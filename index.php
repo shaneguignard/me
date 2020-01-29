@@ -310,7 +310,7 @@
             <p>Who else loves food?</p>
         </food>
 -->
-        <!-- <research>
+        <research>
             <h4>Research</h4>
             <p>Industry 4.0 and the Smart Manufacturing Plant</p>
             <ol>
@@ -318,7 +318,7 @@
                         in Manufacturing</a>
                 </li>
             </ol>
-        </research> -->
+        </research>
         <about>
             <h4>About</h4>
             <p>
