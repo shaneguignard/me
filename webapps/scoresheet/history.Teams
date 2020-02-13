@@ -40,7 +40,7 @@ IF(goalsFor = goalsAgainst, 1, 0) AS tie,
                     type, 
                     player 
                     from Events
-                    where date > date_sub(CURRENT_TIMESTAMP, INTERVAL 1 DAY)
+                    where date > '2020-01-19'
                 ) 
                 as temp
                 GROUP BY date, team
@@ -91,7 +91,7 @@ IF(goalsFor = goalsAgainst, 1, 0) AS tie,
                     type, 
                     player 
                     from Events
-                    where date > date_sub(CURRENT_TIMESTAMP, INTERVAL 1 DAY)
+                    where date > '2020-01-19'
                 ) 
                 as temp 
                 GROUP BY date, team

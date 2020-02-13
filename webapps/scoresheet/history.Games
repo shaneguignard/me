@@ -20,7 +20,7 @@ SELECT
                 sum(type='assist') as assists, 
                 sum(type='penalty')*2 as penaltyMins 
                 FROM Events 
-                where date > date_sub(CURRENT_TIMESTAMP, INTERVAL 1 DAY)
+                where date > '2020-01-19'
             GROUP BY date, team
             ) as temp 
         GROUP BY floor((id+1)/2);

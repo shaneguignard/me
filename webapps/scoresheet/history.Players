@@ -23,7 +23,7 @@ from
     sum(if(type='goal', 1, 0)+ if(type='assist', 1, 0)) as points,
     sum(if(type='penalty', 2, 0)) as penaltyMin
     from Events
-    where date > date_sub(CURRENT_TIMESTAMP, INTERVAL 1 DAY)
+    where date > '2020-01-19'
     group by date, player, team
 ) 
 as tempPlayers
