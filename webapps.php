@@ -1,8 +1,6 @@
-<h4>webApps</h4>
+﻿<h4>webApps</h4>
     <p>A collection of my current and past projects</p>
     <ul>
-        <li>
-            <a href='./webapps/'>All</a></li>
         <li>
             <a href='./webapps/creemoresnhl/beta/timekeeper/'>CSNHL timesheet</a></li>
         <li>
