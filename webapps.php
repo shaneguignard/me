@@ -13,6 +13,6 @@
             <a href='./webapps/bigButton/'>Big Red Button</a>
         </li>
         <li>
-            <a href='./webapps/York Village Housing Association/YVHA Registry/'>YVHA Housing Registry</a>
+            <a href='./webapps/yvha/YVHA Registry/'>YVHA Housing Registry</a>
         </li>
     </ul>
