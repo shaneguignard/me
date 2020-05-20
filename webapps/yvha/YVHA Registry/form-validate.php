@@ -208,7 +208,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 	if($check !== false) {
-		$photoErr = "File is an image - " . $check["mime"] . ".";
 		$uploadOk = 1;
 	} else {
 	$photoErr =  "File is not an image.";
