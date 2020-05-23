@@ -9,7 +9,7 @@ $streetNumReq = $streetNameReq = $rentReq = '';
 $streetNumErr = '';
 $streetNameErr = '';
 $rentErr = '';
-
+$yvhaPhotoUpload = '';
 
 // Validate Post Form
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -35,6 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	 
 	// Optional items defaults values if left blank
 	// Recidency
+	$homeOwner = test_input($_POST['homeOwner']);
 	
 	if(empty($_POST['tenantEnd'])){
 		$resident = ''; 
@@ -198,7 +199,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	
 	$allComments = join("\n\n", $comments);	
 		
-	// file name should be something incremental and automated	
 	$target_dir = "uploads/";
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
@@ -210,14 +210,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if($check !== false) {
 		$uploadOk = 1;
 	} else {
-	$photoErr =  "File is not an image.";
 	$uploadOk = 0;
 	
 	}
 
 
 	// Check if file already exists
-	if (file_exists($target_file)) {
+	if (file_exists($target_file) && $uploadOk == 1 ) {
 	  $photoErr = "Sorry, file already exists.";
 	  $uploadOk = 0;
 	}
@@ -232,14 +231,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	
 	
 	// Allow certain file formats
-	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" && $uploadOk != 0 ) {
 	  $photoErr =  "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
 	  $uploadOk = 0;
 	}
 
 	// Check if $uploadOk is set to 0 by an error
-	$yvhaPhotoUpload = $target_dir.$uniqueImgKey.".png";
+	
 	if ($uploadOk != 0) {
+		$yvhaPhotoUpload = $target_dir.$uniqueImgKey.".png";
 		if (!move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $yvhaPhotoUpload )) {
 			$photoErr = "Sorry, there was an error uploading your file.";
 		}
@@ -252,6 +252,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	`street_name`, 
 	`rent`, 
 	`resident`,
+	`homeOwner`,
 	`house_rating`,
 	`cohabitance`,
 	`rooms`,
@@ -285,6 +286,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	'$streetNameReq',
 	$rentReq,
 	'$resident',
+	'$homeOwner',
 	$houseRating,
 	'$bias',
 	'$rooms', 
@@ -314,7 +316,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	)
 EOF;
 	
-	if($uploadOk == 1 and $streetNumErr == '' and $streetNameErr == '' and $rentErr == ''){
+	if($streetNumErr == '' and $streetNameErr == '' and $rentErr == '' and $photoErr == ''){
 		$result = $conn->query($sql);
 		if($result === FALSE){
 			echo "Error: " . $sql . "<br>" . $conn->error;

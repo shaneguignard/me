@@ -123,6 +123,7 @@
     <form id='renter' method="POST" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' enctype="multipart/form-data">
         <!-- <input type='checkbox' onselect="inputs.forEach(noAnswer);">No Answer -->
 		
+		
 		<!-- HOUSING DETAILS -->
 		<h3>Housing Details</h3>
 		Please provide the house number and street name in their respective fields.
@@ -130,7 +131,7 @@
         <input name='streetname' type='text' placeholder="Street Name (Required)" value="<?php echo $streetNameReq; ?>" required>
         How much do you currently pay per month in rent?
 		<input name='rent' type='text' placeholder="Rent Cost Per Month (Requred)" value="<?php echo $rentReq; ?>" required>
-		
+		<input type='checkbox' name='homeOwner' value='homeowner'> I am the current home owner.
 		<hr>
 		
 		<!-- RESIDENCY -->
@@ -142,9 +143,8 @@
 		<div id='previousResidencyDates'>
 			When did you stop living here? 
 			<input name='tenantEnd' type='date' value="<?php echo $resident; ?>">
-		</div>
 		<input type='radio' name='currentResident' value='never' onclick='exposeSubMenu("notResident", "previousResidencyDates")'>I'd rather not say</br>
-
+		</div>
 		<br>
 		
 		What are the cohabitance conditions?
@@ -157,7 +157,7 @@
 		Overall Quality of House?
 		<select name='houseRating'>
 			<option value='-1'>Unsatisfactory</option>
-			<option value='1'>Satisfactory</option> 
+			<option value='1' checked>Satisfactory</option> 
 			<option value='2'>Excellent</option>
 		</select>
 	
@@ -194,7 +194,7 @@
 		Overall Quality of Room?
 		<select name='roomRating'>
 			<option value='-1'>Unsatisfactory</option>
-			<option value='1'>Satisfactory</option> 
+			<option value='1' checked>Satisfactory</option> 
 			<option value='2'>Excellent</option>
 		</select>
 		
@@ -207,7 +207,7 @@
 		Overall Quality of Kitchens?
 		<select name='kitchenRating'>
 			<option value='-1'>Unsatisfactory</option>
-			<option value='1'>Satisfactory</option> 
+			<option value='1' checked>Satisfactory</option> 
 			<option value='2'>Excellent</option>
 		</select>
 		
@@ -217,7 +217,7 @@
 		Overall Quality of Bathrooms?
 		<select name='bathroomRating'>
 			<option value='-1'>Unsatisfactory</option>
-			<option value='1'>Satisfactory</option> 
+			<option value='1' checked>Satisfactory</option> 
 			<option value='2'>Excellent</option>
 		</select>
 		
@@ -228,7 +228,7 @@
 		Overall Quality of Laundry facilities?
 		<select name='launderRating'>
 			<option value='-1'>Unsatisfactory</option>
-			<option value='1'>Satisfactory</option> 
+			<option value='1' checked>Satisfactory</option> 
 			<option value='2'>Excellent</option>
 		</select>
 		
@@ -236,7 +236,7 @@
 		If there are Common Areas, how would you rate their overall quality?
 		<select name='commonAreaRating'>
 			<option value='-1'>Unsatisfactory</option>
-			<option value='1'>Satisfactory</option> 
+			<option value='1' checked>Satisfactory</option> 
 			<option value='2'>Excellent</option>
 		</select>
 		
