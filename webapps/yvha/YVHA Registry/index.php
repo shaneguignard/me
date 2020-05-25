@@ -2,7 +2,7 @@
 <html>
 <?php include('form-validate.php'); ?>
 <head>
-    <title>Renters Submittion Form</title>
+    <title>YVHA Registry</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Scales the display to the same resolution on all devices-->
@@ -130,7 +130,7 @@
         <input name='number' type='text' placeholder="Street Number (Required)" value="<?php echo $streetNumReq; ?>" required>
         <input name='streetname' type='text' placeholder="Street Name (Required)" value="<?php echo $streetNameReq; ?>" required>
         How much do you currently pay per month in rent?
-		<input name='rent' type='text' placeholder="Rent Cost Per Month (Requred)" value="<?php echo $rentReq; ?>" required>
+		<input name='rent' type='text' placeholder="Rent Cost Per Month (Required)" value="<?php echo $rentReq; ?>" required>
 		<input type='checkbox' name='homeOwner' value='homeowner'> I am the current home owner.
 		<hr>
 		
@@ -147,7 +147,7 @@
 		</div>
 		<br>
 		
-		What are the cohabitance conditions?
+		What are the cohabitants' conditions?
         <select name='bias'>
             <option value='female-only'>Female-Only</option>
             <option value='male-only'>Male-Only</option>
@@ -246,7 +246,7 @@
 		<p>
 			What type of security is there for the main door?</br>
 			<input type='radio' name='houseSecurity' value='key' onclick="exposeSubMenu('otherHomeSecurity', 'homeSecurityDetails')">Physical Key</br>
-			<input type='radio' name='houseSecurity' value='digital' onclick="exposeSubMenu('otherHomeSecurity', 'homeSecurityDetails')">Digital Key Pad</br>
+			<input type='radio' name='houseSecurity' value='digital' onclick="exposeSubMenu('otherHomeSecurity', 'homeSecurityDetails')">Digital KeyPad</br>
 			<input type='radio' name='houseSecurity' value='other' id='otherHomeSecurity' onclick="exposeSubMenu('otherHomeSecurity', 'homeSecurityDetails')">Other</br>
 			<div id='homeSecurityDetails'>
 				<input type='text' name='comments' placeholder='What other home security systems are being used?'>
@@ -255,7 +255,7 @@
 		<p>
 			What type of security is there for personal doors? </br>
 			<input type='radio' name='roomSecurity' value='key' onclick="exposeSubMenu('otherRoomSecurity', 'roomSecurityDetails')">Physical Key</br>
-			<input type='radio' name='roomSecurity' value='digital' onclick="exposeSubMenu('otherRoomSecurity', 'roomSecurityDetails')">Digital Key Pad</br>
+			<input type='radio' name='roomSecurity' value='digital' onclick="exposeSubMenu('otherRoomSecurity', 'roomSecurityDetails')">Digital KeyPad</br>
 			<input type='radio' name='roomSecurity' value='other' id='otherRoomSecurity' onclick="exposeSubMenu('otherRoomSecurity', 'roomSecurityDetails')">Other</br>
 			<div id='roomSecurityDetails'>
 				<input type='text' name='comments' placeholder='What other room security systems are being used?'>
@@ -289,7 +289,7 @@
 			<textarea name='comments' placeholder='Please describe any additional services that may occur which has not been included in this list.'></textarea>
 		</div>
 		
-		<h3>Acessibility</h3>
+		<h3>Accessibility</h3>
 		<!-- http://www.ohrc.on.ca/en/part-i-%E2%80%93-freedom-discrimination/housing-4 -->
         <input name='accessibility' type='text' placeholder='Are there any accessibility modifications in the house?' value="<?php echo $accessibility; ?>">
         
@@ -313,7 +313,7 @@
 		-->
 
 		<hr>
-		<input name='sumbit' type='submit'>
+		<input name='submit' type='submit'>
     </form>
 	
     <div id='foo'>
@@ -321,10 +321,10 @@
         <p>
             We are collecting information to create a database of all the houses in the village in the effort
             to standardize the housing prices in the village. If you own one of these lovely homes, we would 
-            like to hear from you as well. By standardizing the living costs of a room in the village, and finding
-            a way to privide a resonable minimum level of living standard and lowest cost to the owner 
+            i like to hear from you as well. By standardizing the living costs of a room in the village, and finding
+            a way to provide a reasonable minimum level of living standard and lowest cost to the owner 
             (remember we want to be green too!). We can work together to find a business model that allows
-            the income property to support itself. 
+            the income property to support itself.  
         </p>
     </div>
 </body>
