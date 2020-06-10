@@ -5,59 +5,12 @@
 <html>
     <head>
         <title>YVHA Gallery</title>
-        <style> 
-        h1{
-            text-align:center;
-        }
-        table{
-            width:100%;
-        }
-        a{
-            text-decoration: none;
-
-        }
-        .button{
-            width:200px;
-            font-size:14pt;
-            text-align: center;
-            padding: 20px;
-            color: white;
-            background: #d22f25;
-			margin-left: auto;
-			margin-right: auto;
-        }
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--Scales the display to the same resolution on all devices-->
 		
-        .button:hover{
-            background: #5e5e5e;
-            color: black;
-        }
-		
-		#village{
-			width: 100%;
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 20px;
-			grid-auto-rows: minmax(100px, auto);
-		}
-		
-		.streets {
-			grid-column: 1 / 3;
-			grid-row: 1;
-			padding: 20px;
-			border: 1px solid black;
-			border-radius: 10px;
-		}
-		
-		a .streets:hover{
-			border: 1px solid red;
-		}
-		.streets img{
-			height: 200px;
-			display: block;
-			margin-right: auto;
-			margin-left: auto;
-			}
-        </style> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<?php include('defaultStyle.php'); ?>
     </head>
 <body>
     
@@ -67,12 +20,7 @@
  
 	</div>
 	
-<div id='footer'>
-        <p>Thank you for checking out our Gallery, this is a very preliminary version of what we have, built by students for students. 
-        If you have any suggestions, or would like to help shape what the Gallery becomes, contact us <a href='https://yvha.ca/contact-us'>here</a> and we would love to hear from you.</p>
-		<a id='backToForm' href='index.php'>
-        <div class='button'>Submit a review</div></a>
-</div> 
+<?php include('foo.php'); ?>
 </body>
 <script>
   <?php 
@@ -98,12 +46,12 @@
 			var pictureURL = "./theVillage/"+((streets[i].street_name).replace(' ', '_')).toLowerCase()+"_"+(streets[i].street_type).toLowerCase()+"/"+((streets[i].street_name).replace(' ', '_')).toLowerCase()+".JPG";
 		
 			var content = [];
-			content.push("<a href='./"+streets[i].street_name+"'>");
+			content.push("<a href='./myStreet.php?name="+streets[i].street_name+"'>");
 			content.push("<table class='streets'>");
 			content.push("<tr colspan=2><td><img src ='"+pictureURL+"' onerror='this.src=\""+defaultImage+"\";'></td></tr>");
 			content.push("<tr><td colspan=2><h3>"+streets[i].street_name+"</h3></td></tr>");
 			content.push("<tr><td>Average Rent Per House</td><td>$"+streets[i].avgRent+"</td></tr>");
-			content.push("<tr><td>Average Rent Per House</td><td>"+streets[i].avgRooms+"</td></tr>");
+			content.push("<tr><td>Average Rooms Per House</td><td>"+streets[i].avgRooms+"</td></tr>");
 			content.push("</table>");
 			content.push("</a>");
 			var temp = content.join('');
